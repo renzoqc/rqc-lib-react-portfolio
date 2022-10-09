@@ -9,37 +9,12 @@
     width: 100%;
   }
 
-  .test {
+  .techs-back {
     display: flex;
     position: relative;
     min-height: 300px;
-    .uno {
+    > p {
       position: absolute;
-      left: 10em;
-      bottom: 0.1em;
-    }
-    .dos {
-      position: absolute;
-      left: 30em;
-      bottom: 0.1em;
-    }
-    .tres {
-      position: absolute;
-      left: 50em;
-      bottom: 0.1em;
-    }
-    .cuatro {
-      position: absolute;
-      left: 45em;
-    }
-    .cinco {
-      position: absolute;
-      left: 18em;
-    }
-    .seis {
-      position: absolute;
-      left: 30em;
-      bottom: 10em;
     }
   }
 

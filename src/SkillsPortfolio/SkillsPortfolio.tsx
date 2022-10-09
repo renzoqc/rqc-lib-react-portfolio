@@ -10,39 +10,21 @@ const SkillsPortfolio = ({
   altImage,
   withText,
 }: SkillsPortfolioProps) => {
-  //
-  // const CircleGreen = () =>
-  //     <svg height="20" width="20" className={'circle'}>
-  //         <circle cx="10" cy="10" r="6" strokeWidth="1.5"/>
-  //     </svg>;
-  //
-  // const arrCircle: number[] = [0, 1, 2, 3, 4];
-  //
-  // const arrAbout: string[] = [
-  //     "UNO Jason Lengstorf is the VP of Developer Experience at Netlify and the host of Learn With Jason, a live-streamed video show where he pair programs to learn something new in 90 minutes. As a keynote speaker and author, Jason focuses on building healthier teams through trust, curiosity, and play. He's trying his very best to follow his own advice. He lives in Portland, Oregon.\n",
-  //     "DOS Jason Lengstorf is the VP of Developer Experience at Netlify and the host of Learn With Jason, a live-streamed video show where he pair programs to learn something new in 90 minutes. As a keynote speaker and author, Jason focuses on building healthier teams through trust, curiosity, and play. He's trying his very best to follow his own advice. He lives in Portland, Oregon.\n",
-  //     "TRES Jason Lengstorf is the VP of Developer Experience at Netlify and the host of Learn With Jason, a live-streamed video show where he pair programs to learn something new in 90 minutes. As a keynote speaker and author, Jason focuses on building healthier teams through trust, curiosity, and play. He's trying his very best to follow his own advice. He lives in Portland, Oregon.\n",
-  //     "CUATRO Jason Lengstorf is the VP of Developer Experience at Netlify and the host of Learn With Jason, a live-streamed video show where he pair programs to learn something new in 90 minutes. As a keynote speaker and author, Jason focuses on building healthier teams through trust, curiosity, and play. He's trying his very best to follow his own advice. He lives in Portland, Oregon.\n",
-  //     "CINCO Jason Lengstorf is the VP of Developer Experience at Netlify and the host of Learn With Jason, a live-streamed video show where he pair programs to learn something new in 90 minutes. As a keynote speaker and author, Jason focuses on building healthier teams through trust, curiosity, and play. He's trying his very best to follow his own advice. He lives in Portland, Oregon.\n",
-  // ]
-  //
-  // const arrThoughts: string[] = [
-  //     "Simplicity is the baddest choice to be the best.",
-  //     "I know I’m not successful enough, but I’m passionate enough not to worry about success.",
-  //     "Creativity is the driver of an unstoppable train called Passion."
-  // ]
-  //
-  // const [about, setAbout] = useState<string>("");
-  // const [sizeAbout, setSizeAbout] = useState<number>(3);
-  //
-  // useEffect(() => {
-  //     setAbout(arrAbout[sizeAbout])
-  // }, []);
-  //
-  // const updateAbout = (i: number) => {
-  //     setAbout(arrAbout[i])
-  //     setSizeAbout(i)
-  // }
+  const arrTech: { name: string; position: any }[] = [
+    { name: "CSS3", position: { top: "10%", left: "15%" } },
+    { name: "PostgreSQL", position: { top: "4%", left: "26%" } },
+    { name: "Docker", position: { top: "30%", left: "22%" } },
+    { name: "NestJS", position: { top: "25%", left: "46%" } },
+    { name: "Sass", position: { top: "10%", left: "56%" } },
+    { name: "ES6", position: { top: "40%", left: "66%" } },
+    { name: "Javascript", position: { top: "12%", left: "71%" } },
+    { name: "Python", position: { top: "28%", left: "85%" } },
+    { name: "Git", position: { top: "90%", left: "11%" } },
+    { name: "MongoDB", position: { top: "95%", left: "30%" } },
+    { name: "EspressJS", position: { top: "80%", left: "55%" } },
+    { name: "Typescript", position: { top: "94%", left: "73%" } },
+    { name: "RestFULL", position: { top: "82%", left: "84%" } },
+  ];
 
   return (
     <div data-testid="SkillsPortfolio" className={"SkillsPortfolio"}>
@@ -51,25 +33,32 @@ const SkillsPortfolio = ({
         <p>Skillsets</p>
         <hr className={"line"} />
       </div>
+      
+      
 
-      <div className={"test"}>
-        <p className="uno">razek</p>
-        <p className="dos">asdfasd</p>
-        <p className="tres">asdfasd</p>
-        <p className="cuatro">asdfasd</p>
-        <p className="cinco">asdfasd</p>
-        <p className="seis">asdfasd</p>
+      <div className={"techs-back"}>
+        {arrTech.map((tech) => (
+          <p style={tech.position}>{tech.name}</p>
+        ))}
       </div>
 
-      {/*<Row*/}
-      {/*    className={'About RQ-d-flex'}*/}
-      {/*    noGutter*/}
-      {/*>*/}
-      {/*    <Col xs={18} other={10} className={'content'}>*/}
-      {/*    </Col>*/}
-      {/*    <Col xs={18} other={8}>*/}
-      {/*    </Col>*/}
-      {/*</Row>*/}
+      <div className={"icons-front"}>
+        <svg
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <rect width="24" height="24" fill="#F1DC50" />
+            <path
+              stroke="#333"
+              stroke-width="2"
+              d="M12,11 C12,15.749205 12,18.4158717 12,19 C12,19.8761925 11.4771235,21 10,21 C7.61461794,21 7.5,19 7.5,19 M20.7899648,13.51604 C20.1898831,12.5053467 19.3944074,12 18.4035378,12 C16.8563489,12 16,13 16,14 C16,15 16.5,16 18.5084196,16.5 C19.7864643,16.8181718 21,17.5 21,19 C21,20.5 19.6845401,21 18.5,21 C16.9861609,21 15.9861609,20.3333333 15.5,19"
+            />
+          </g>
+        </svg>
+      </div>
     </div>
   );
 };
