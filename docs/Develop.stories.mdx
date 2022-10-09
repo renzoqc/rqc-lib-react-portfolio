@@ -1,0 +1,35 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta
+  parameters={{
+    viewMode: 'docs',
+    previewTabs: {
+    canvas: { hidden: true }
+    },
+  }}
+  title="Docs/Develop" />
+
+## Development mode
+
+`npm start` runs storybook in development mode with hot reloading. Use link display url or opened page.
+
+## Build library
+
+`npm run build` bundles library code to `build` folder in the root of project.
+
+## `src` directory structure
+
+Development takes place inside `src` directory. Each folder contains a Component.
+
+```bash
+|-- TestComponent
+|   |-- HeaderPortfolio.tsx # Implementation of Component
+|   |-- TestComponent.scss # SASS file for Component
+|   |-- TestComponent.stories.mdx # Docs and stories for Component
+|   |-- TestComponent.test.ts # Test file for Component
+|   └── HeaderPortfolio.types.ts # Typescript definition of props for Component
+└── index.ts # entry point for rollup build
+
+```
+
+`npm run generate $componentName` creates a new Component with name `componentName`

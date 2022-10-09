@@ -1,0 +1,31 @@
+
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import Image from './Image';
+
+<Meta title="Image" component={Image} />
+
+# Image
+
+## Image props
+<ArgsTable of={Image} />
+
+## Description
+
+`Image` component is the header of portfolio.
+
+## Demo
+
+export const Template = (args) => {
+    return <Image {...args} />
+}
+
+<Story name="Image" args={{
+    classImg: 'RQ-w-50',
+    pathImage: 'img/bartolito.png',
+    altImage: 'portfolio',
+    border: true,
+    fade: true,
+}}>
+{Template.bind({})}
+</Story>
+

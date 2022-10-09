@@ -1,0 +1,54 @@
+
+$cyan: #2ac0f1;
+$cyan-pf: #60ffd9;
+$orange: #FFA401;
+$white-green: #E6F3EF;
+$green: #00875a;
+$gray: #787878;
+$white-red: #fce9eb;
+$red: #e61f37;
+$gray-shadow: #8fabc34d;
+$white: white;
+
+$theme-pf: $cyan-pf;
+$theme-name-pf: #b0cdf1;
+$theme-subTitle-pf: #a9a297;
+
+//general styles
+
+.RQ-theme {
+  color: $theme-pf;
+}
+
+.RQ-name {
+  color: $theme-name-pf;
+}
+
+.RQ-subTitle {
+  color: $theme-subTitle-pf;
+}
+//
+
+.RQ-cyan-pf {
+  color: $cyan-pf;
+}
+
+.RQ-white {
+  color: $white;
+}
+
+.RQ-red {
+  color: $red;
+}
+
+.RQ-orange {
+  color: $orange;
+}
+
+.RQ-green {
+  color: $green;
+}
+
+.RQ-bg-green {
+  background-color: $green;
+}

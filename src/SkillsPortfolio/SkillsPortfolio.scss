@@ -1,0 +1,46 @@
+@import '../assets/scss/style.scss';
+
+.SkillsPortfolio {
+  display: block;
+  .line {
+    margin: 0 40px 0 10px;
+    color: green;
+    border: 1px solid $theme-pf;
+    width: 100%;
+  }
+
+  .test {
+    display: flex;
+    position: relative;
+    min-height: 300px;
+    .uno {
+      position: absolute;
+      left: 10em;
+      bottom: 0.1em;
+    }
+    .dos {
+      position: absolute;
+      left: 30em;
+      bottom: 0.1em;
+    }
+    .tres {
+      position: absolute;
+      left: 50em;
+      bottom: 0.1em;
+    }
+    .cuatro {
+      position: absolute;
+      left: 45em;
+    }
+    .cinco {
+      position: absolute;
+      left: 18em;
+    }
+    .seis {
+      position: absolute;
+      left: 30em;
+      bottom: 10em;
+    }
+  }
+
+}
