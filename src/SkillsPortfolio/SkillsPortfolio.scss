@@ -9,13 +9,35 @@
     width: 100%;
   }
 
-  .techs-back {
-    display: flex;
+  .main {
+    color: $theme-pf;
     position: relative;
-    min-height: 300px;
-    > p {
-      position: absolute;
+    
+    .back {
+      display: flex;
+      position: relative;
+      min-height: 300px;
+      > p {
+        position: absolute;
+      }
     }
+    
+    .front {
+      position: absolute;
+      top: 50%;
+      left: 0; 
+      right: 0; 
+      margin-left: auto; 
+      margin-right: auto; 
+      width: 100px;
+      
+      .icon1, .icon2, .icon3, .icon4 {
+        width: 70px;
+        margin: 0 90px;
+      }
+      
+    }
+    
   }
 
 }

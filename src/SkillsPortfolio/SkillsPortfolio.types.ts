@@ -1,8 +1,9 @@
 export interface SkillsPortfolioProps {
-    /**
-     * Defines ...
-     */
-    withText: boolean;
-    pathImage: string;
-    altImage: string;
+  /**
+   * Defines ...
+   */
+  arrTech: {
+    name: string;
+    position: any;
+  }[];
 }
