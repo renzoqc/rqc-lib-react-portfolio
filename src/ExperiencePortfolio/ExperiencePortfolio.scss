@@ -1,0 +1,65 @@
+@import '../assets/scss/style.scss';
+
+
+.main {
+  margin: 0 20rem;
+  .header {
+    white-space: nowrap;
+    hr {
+      border: 1px solid $theme-pf;
+      width: 100%;
+    }
+  }
+  
+  .company {
+    a {
+      text-decoration: none;
+      text-decoration-color: white;
+      color: white;
+    }
+    
+    .left-side {
+      border-left: 2px solid $subTheme-pf;
+      height: 50px;
+
+      &.active {
+       border-left: 2px solid $theme-pf;
+      }
+    }  
+  }
+  
+  .content {
+    p {
+      margin: 0;
+      padding:0;
+    }
+    ul {
+      padding: 0;
+      margin: 25px 0 0 0;
+      list-style-image: initial;
+      list-style: none;
+      li {        
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
+      }
+      li::before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: $theme-pf;
+      }
+    }
+    .header {
+      h3 {
+        color: $subTheme-pf;
+      }
+      a {
+        color: $theme-pf;     
+        text-decoration: none;
+        text-decoration-color: white;
+      }
+    }
+  
+  }
+}

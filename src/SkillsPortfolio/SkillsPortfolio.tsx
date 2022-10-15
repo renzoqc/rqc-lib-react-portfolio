@@ -10,7 +10,7 @@ const SkillsPortfolio = ({ arrTech }: SkillsPortfolioProps) => {
         <hr className={"line"} />
       </div>
 
-      <div className="main RQ-justify-center">
+      <div className="main-skills RQ-justify-center">
         <div className={"back"}>
           {arrTech.map((tech) => (
             <p style={tech.position}>{tech.name}</p>
