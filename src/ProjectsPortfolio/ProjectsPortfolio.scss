@@ -1,8 +1,47 @@
 @import '../assets/scss/style.scss';
 
 .ProjectsPortfolio {
-  align-items: center;
-  img {
-    width: 35px;
+  .project-content {
+    position: relative;
+  }
+  .project-desc {
+    right: 0;
+    // width: 550px;
+    width: 45%;
+    z-index: 2;
+    position: absolute;
+  }
+  .project-img {
+    position: relative;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .project-summary {
+    background-color: #0e2342;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px -15px #020c1bb3;
+    p {
+      padding: 30px;
+    }
+    strong {
+      color: $theme-pf;
+    }
+    a {
+      color: $theme-pf;
+      text-decoration: none;
+    }
+  }
+  .project-links {
+    float: right;
+    .project-icon {
+      width: 20px;
+      color: #b0cdf1;
+      &:hover {
+        color: $theme-pf;
+        transition: 0.5s;
+      }
+    }
   }
 }
