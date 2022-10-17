@@ -4,8 +4,6 @@ import { linkTo } from "@storybook/addon-links";
 import { Col, Row } from "../Grid/Grid";
 
 const ProjectsPortfolio = ({
-  pathImage,
-  altImage,
   withText,
 }: ProjectsPortfolioProps) => {
   const ProjectItemLeft = (props: any) => (
