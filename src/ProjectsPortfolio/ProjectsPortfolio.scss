@@ -5,7 +5,6 @@
     position: relative;
     .project-desc {
       right: 0;
-      // width: 550px;
       width: 45%;
       z-index: 2;
       position: absolute;
@@ -13,6 +12,7 @@
     .project-img {
       position: relative;
       img {
+        border-radius: 5px;
         width: 100%;
         object-fit: cover;
         &:hover {
@@ -48,23 +48,16 @@
     }
   }
 
-
-
-
   .project-content-opposite {
     position: relative;
     .project-desc {
-      // right: 0;
-      // width: 45%;
       width: 45%;
       z-index: 2;
-      position: absolute;
     }
     .project-img {
-      
       right: 0;
-      position: absolute;
       img {
+        border-radius: 5px;
         width: 100%;
         object-fit: cover;
         &:hover {

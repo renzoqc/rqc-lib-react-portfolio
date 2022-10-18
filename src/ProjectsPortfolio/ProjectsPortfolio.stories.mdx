@@ -20,9 +20,68 @@ export const Template = (args) => {
 }
 
 <Story name="ProjectsPortfolio" args={{
-    pathImage: 'img/charmander.png',
-    altImage: 'portfolio',
-    withText: true,
+    arrProjects: [
+    {
+      img: {
+        source:
+          "https://definicion.de/wp-content/uploads/2009/12/paisaje-1.jpg",
+      },
+      description: {
+        type: "Featured Project",
+        title: "Build a Spotify Connected App",
+        info: [
+          "A ",
+          <strong>minimal</strong>,
+          ", dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, ",
+          <a href="#">Atom Package Manager</a>,
+          ", and npm.",
+        ],
+        stack: "React Styled Components, Express, Spotify API, Heroku",
+        github: "https://github.com/bchiang7/halcyon-site",
+        url: "https://halcyon-theme.netlify.com/",
+      },
+    },
+    {
+      img: {
+        source:
+          "https://definicion.de/wp-content/uploads/2009/12/paisaje-1.jpg",
+      },
+      description: {
+        type: "Featured Project",
+        title: "Build a Youtube Connected App",
+        info: [
+          "A ",
+          <strong>minimal</strong>,
+          ", dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, ",
+          <a href="#">Atom Package Manager</a>,
+          ", and npm.",
+        ],
+        stack: "React Styled Components, Express, Spotify API, Heroku",
+        github: "https://github.com/bchiang7/halcyon-site",
+        url: "https://halcyon-theme.netlify.com/",
+      },
+    },
+    {
+      img: {
+        source:
+          "https://definicion.de/wp-content/uploads/2009/12/paisaje-1.jpg",
+      },
+      description: {
+        type: "Featured Project",
+        title: "Build a Insta Connected App",
+        info: [
+          "A ",
+          <strong>minimal</strong>,
+          ", dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, ",
+          <a href="#">Atom Package Manager</a>,
+          ", and npm.",
+        ],
+        stack: "React Styled Components, Express, Spotify API, Heroku",
+        github: "https://github.com/bchiang7/halcyon-site",
+        url: "https://halcyon-theme.netlify.com/",
+      },
+    },
+  ]
 }}>
 {Template.bind({})}
 </Story>

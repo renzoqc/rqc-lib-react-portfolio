@@ -1,14 +1,25 @@
 import "./ProjectsPortfolio.scss";
 import { ProjectsPortfolioProps } from "./ProjectsPortfolio.types";
-import { linkTo } from "@storybook/addon-links";
 import { Col, Row } from "../Grid/Grid";
 
-const ProjectsPortfolio = ({
-  withText,
-}: ProjectsPortfolioProps) => {
-  const ProjectItemLeft = (props: any) => (
+const ProjectsPortfolio = ({ arrProjects }: ProjectsPortfolioProps) => {
+  const ProjectItemLeft = (props: {
+    content: {
+      img: {
+        source: string;
+      };
+      description: {
+        type: string;
+        title: string;
+        info: any[];
+        stack: string;
+        github: string;
+        url: string;
+      };
+    };
+  }) => (
     <div className={"RQ-my-5"} style={{ margin: "50px 0 90px 0" }}>
-      <Row className={"About RQ-d-flex project-content"} noGutter>
+      <Row className={"RQ-d-flex project-content"} noGutter>
         <Col xs={18} other={11} className={"project-img"}>
           <img src={props.content.img.source} alt={"ProjectImg"} />
         </Col>
@@ -88,7 +99,7 @@ const ProjectsPortfolio = ({
       description: {
         type: string;
         title: string;
-        info: string;
+        info: any[];
         stack: string;
         github: string;
         url: string;
@@ -96,7 +107,7 @@ const ProjectsPortfolio = ({
     };
   }) => (
     <div className={"RQ-my-5"} style={{ margin: "50px 0 90px 0" }}>
-      <Row className={"About RQ-d-flex project-content-opposite"} noGutter>
+      <Row className={"RQ-d-flex project-content-opposite"} noGutter>
         <Col xs={18} other={7} className={"project-desc"}>
           <p className={"RQ-theme RQ-f-14 RQ-text-left"}>
             {props.content.description.type}
@@ -178,50 +189,13 @@ const ProjectsPortfolio = ({
       <p className={"RQ-ml-6 RQ-mb-5 RQ-f-16"}>
         Each project is unique. Here are some of my works.
       </p>
-      <ProjectItemLeft
-        content={{
-          img: {
-            source:
-              "https://definicion.de/wp-content/uploads/2009/12/paisaje-1.jpg",
-          },
-          description: {
-            type: "Featured Project",
-            title: "Build a Spotify Connected App",
-            info: [
-              "A ",
-              <strong>minimal</strong>,
-              ", dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, ",
-              <a href="#">Atom Package Manager</a>,
-              ", and npm.",
-            ],
-            stack: "React Styled Components, Express, Spotify API, Heroku",
-            github: "https://github.com/bchiang7/halcyon-site",
-            url: "https://halcyon-theme.netlify.com/",
-          },
-        }}
-      />
-      <ProjectItemRight
-        content={{
-          img: {
-            source:
-              "https://definicion.de/wp-content/uploads/2009/12/paisaje-1.jpg",
-          },
-          description: {
-            type: "Featured Project",
-            title: "Build a Spotify Connected App",
-            info: [
-              "A ",
-              <strong>minimal</strong>,
-              ", dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, ",
-              <a href="#">Atom Package Manager</a>,
-              ", and npm.",
-            ],
-            stack: "React Styled Components, Express, Spotify API, Heroku",
-            github: "https://github.com/bchiang7/halcyon-site",
-            url: "https://halcyon-theme.netlify.com/",
-          },
-        }}
-      />
+      {arrProjects.map((item, index) =>
+        index % 2 == 0 ? (
+          <ProjectItemLeft content={item} />
+        ) : (
+          <ProjectItemRight content={item} />
+        )
+      )}
     </div>
   );
 };

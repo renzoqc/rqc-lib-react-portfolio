@@ -2,7 +2,17 @@ export interface ProjectsPortfolioProps {
   /**
    * Defines ...
    */
-  withText: boolean;
-  pathImage: string;
-  altImage: string;
+  arrProjects: {
+    img: {
+      source: string;
+    };
+    description: {
+      type: string;
+      title: string;
+      info: any[];
+      stack: string;
+      github: string;
+      url: string;
+    };
+  }[];
 }
