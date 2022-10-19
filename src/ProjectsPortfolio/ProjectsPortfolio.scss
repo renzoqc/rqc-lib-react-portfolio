@@ -50,12 +50,19 @@
 
   .project-content-opposite {
     position: relative;
+    display: inline-flex;
+    width: 100%;
     .project-desc {
       width: 45%;
       z-index: 2;
+      position: absolute;
     }
     .project-img {
-      right: 0;
+      position:relative; 
+      margin-left:auto; 
+      right:0;
+      // position: absolute;
+      // right: 0;
       img {
         border-radius: 5px;
         width: 100%;
