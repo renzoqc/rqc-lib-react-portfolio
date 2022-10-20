@@ -1,25 +1,25 @@
 
 import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
-import Contact from './Contact';
+import ContactPortfolio from './Contact';
 
-<Meta title="Contact" component={Contact} />
+<Meta title="ContactPortfolio" component={ContactPortfolio} />
 
 # Contact
 
 ## Contact props
-<ArgsTable of={Contact} />
+<ArgsTable of={ContactPortfolio} />
 
 ## Description
 
-`Contact` component is the header of portfolio.
+`ContactPortfolio` component is the header of portfolio.
 
 ## Demo
 
 export const Template = (args) => {
-    return <Contact {...args} />
+    return <ContactPortfolio {...args} />
 }
 
-<Story name="Contact" args={{
+<Story name="ContactPortfolio" args={{
     pathImage: 'img/charmander.png',
     altImage: 'portfolio',
     withText: true,

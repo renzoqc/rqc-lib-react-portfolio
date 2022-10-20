@@ -1,19 +1,27 @@
 import "./Contact.scss";
 import { ContactProps } from "./Contact.types";
-import { linkTo } from "@storybook/addon-links";
-import { Col, Row } from "../Grid/Grid";
 
-const Contact = ({ pathImage, altImage, withText }: ContactProps) => {
+const ContactPortfolio = ({ pathImage, altImage, withText }: ContactProps) => {
   return (
-    <div data-testid="Contact" className={"Contact RQ-d-flex"}>
-      <img src={require(`../assets/${pathImage}`)} alt={altImage} />
-      <div
-        className={`RQ-ml-2 RQ-f-20 ${withText ? "RQ-d-block" : "RQ-d-none"}`}
+    <div data-testid="Contact" className={"Contact"}>
+      <p className="RQ-d-flex RQ-theme">04. What's Next?</p>
+      <h1 className="RQ-d-flex RQ-f-60">Get In Touch</h1>
+      <p className="RQ-d-flex RQ-f-16 RQ-w-50">
+        Thanks for stopping by, I’m currently looking to join a new team of
+        creative developers. If you think we might be a good fit for one
+        another, give me a call 🇵🇪 or send me an email
+      </p>
+      <a
+        className="RQ-d-flex RQ-border-cyan-pf contact-button RQ-theme RQ-f-18"
+        href="#"
       >
-        Portfolio
-      </div>
+        Say Hello
+      </a>
+      <p className="RQ-d-flex RQ-f-12 RQ-mt-3 signature">
+        Designed & Built by Renzo Quispe
+      </p>
     </div>
   );
 };
 
-export default Contact;
+export default ContactPortfolio;
