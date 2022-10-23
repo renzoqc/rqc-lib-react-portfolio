@@ -1,0 +1,91 @@
+.content-center-sides {
+    overflow-x: hidden;
+    padding: 0px 150px;
+    max-width: 100%;
+}
+
+.SidesPortfolio {
+    max-width: 100%;
+    overflow-x: hidden;
+    .right {
+        overflow-x: hidden;
+        width: 40px;
+        position: fixed;
+        bottom: 0px;
+        left: auto;
+        right: 40px;
+        z-index: 10;
+        color: green;
+        max-width: 100%;
+        .right-email {
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 90px;
+                margin: 0px auto;
+                background-color: #8892b0;
+            }
+            a {
+                margin: 20px auto;
+                padding: 10px;
+                font-family: var(--font-mono);
+                font-size: var(--fz-xxs);
+                line-height: var(--fz-lg);
+                letter-spacing: 0.1em;
+                -webkit-writing-mode: vertical-rl;
+                writing-mode: vertical-rl;
+                text-decoration: none;
+                color: #8892b0;
+            }
+        }
+    }
+    .left {
+        overflow-x: hidden;
+        max-width: 100%;
+        width: 40px;
+        position: fixed;
+        bottom: 0px;
+        left: 40px;
+        right: auto;
+        z-index: 10;
+        color: red;
+        .left-social-links {
+            // display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            list-style-image: initial;            
+            
+            li a {
+                padding: 10px;
+                display: inline-block;
+                text-decoration: none;
+                text-decoration-skip-ink: auto;
+                color: #8892b0;
+                position: relative;
+                transition: 1s;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            &::after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 90px;
+                margin: 0px auto;
+                background-color: #8892b0;
+            }
+        }
+    }    
+}
