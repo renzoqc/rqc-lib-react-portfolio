@@ -1,8 +1,8 @@
 export interface AboutPortfolioProps {
-    /**
-     * Defines ...
-     */
-    withText: boolean;
-    pathImage: string;
-    altImage: string;
+  /**
+   * Defines ...
+   */
+  pathImage: string;
+  arrAbout: string[];
+  arrThoughts: string[];
 }

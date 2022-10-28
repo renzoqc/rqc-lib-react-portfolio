@@ -6,7 +6,7 @@ const SidesPortfolio = ({ left, right }: SidesPortfolioProps) => {
     <div data-testid="SidesPortfolio" className={"SidesPortfolio"}>
       <div className="right">
         <div className="right-email">
-          <a href="mailto:renzo.quispe.c@uni.pe">renzo.quispe.c@uni.pe</a>
+          <a href={`mailto:${right.email}`}>{right.email}</a>
         </div>
       </div>
       <div className="left">
@@ -14,7 +14,7 @@ const SidesPortfolio = ({ left, right }: SidesPortfolioProps) => {
           {left.github.show && (
             <li>
               <a
-                href="https://github.com/bchiang7"
+                href={left.github.url}
                 aria-label="GitHub"
                 target="_blank"
                 rel="noreferrer"
@@ -25,10 +25,9 @@ const SidesPortfolio = ({ left, right }: SidesPortfolioProps) => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  className="feather feather-github"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   data-darkreader-inline-stroke=""
                 >
                   <title>GitHub</title>
@@ -37,115 +36,115 @@ const SidesPortfolio = ({ left, right }: SidesPortfolioProps) => {
               </a>
             </li>
           )}
-          <li>
-            <a
-              href="https://www.instagram.com/bchiang7"
-              aria-label="Instagram"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="feather feather-instagram"
-                data-darkreader-inline-stroke=""
+          {left.instagram.show && (
+            <li>
+              <a
+                href={left.instagram.url}
+                aria-label="Instagram"
+                target="_blank"
+                rel="noreferrer"
               >
-                <title>Instagram</title>
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/bchiang7"
-              aria-label="Twitter"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="feather feather-twitter"
-                data-darkreader-inline-stroke=""
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  data-darkreader-inline-stroke=""
+                >
+                  <title>Instagram</title>
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </li>
+          )}
+          {left.twitter.show && (
+            <li>
+              <a
+                href={left.twitter.url}
+                aria-label="Twitter"
+                target="_blank"
+                rel="noreferrer"
               >
-                <title>Twitter</title>
-                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/bchiang7"
-              aria-label="Linkedin"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="feather feather-linkedin"
-                data-darkreader-inline-stroke=""
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  data-darkreader-inline-stroke=""
+                >
+                  <title>Twitter</title>
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+            </li>
+          )}
+          {left.linkedin.show && (
+            <li>
+              <a
+                href={left.linkedin.url}
+                aria-label="Linkedin"
+                target="_blank"
+                rel="noreferrer"
               >
-                <title>LinkedIn</title>
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://codepen.io/bchiang7"
-              aria-label="Codepen"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="feather feather-codepen"
-                data-darkreader-inline-stroke=""
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  data-darkreader-inline-stroke=""
+                >
+                  <title>LinkedIn</title>
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </li>
+          )}
+          {left.editor.show && (
+            <li>
+              <a
+                href={left.editor.url}
+                aria-label="Codepen"
+                target="_blank"
+                rel="noreferrer"
               >
-                <title>CodePen</title>
-                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
-                <line x1="12" y1="22" x2="12" y2="15.5"></line>
-                <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
-                <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
-                <line x1="12" y1="2" x2="12" y2="8.5"></line>
-              </svg>
-            </a>
-          </li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  data-darkreader-inline-stroke=""
+                >
+                  <title>CodePen</title>
+                  <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                  <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                  <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                  <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                  <line x1="12" y1="2" x2="12" y2="8.5"></line>
+                </svg>
+              </a>
+            </li>
+          )}
         </ul>
-      </div>
-      <div className="content-center-sides">
-        <p>Holaaa</p>
-        <p>Holaaa</p>
       </div>
     </div>
   );
