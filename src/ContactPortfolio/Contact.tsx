@@ -1,7 +1,7 @@
 import "./Contact.scss";
 import { ContactProps } from "./Contact.types";
 
-const ContactPortfolio = ({ pathImage, altImage, withText }: ContactProps) => {
+const ContactPortfolio = ({ withText }: ContactProps) => {
   return (
     <div data-testid="Contact" className={"Contact"}>
       <p className="RQ-d-flex RQ-theme">04. What's Next?</p>
