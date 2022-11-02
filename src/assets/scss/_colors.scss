@@ -11,9 +11,11 @@ $gray-shadow: #8fabc34d;
 $white: white;
 
 $theme-pf: $cyan-pf;
-$theme-name-pf: #b0cdf1;
+$theme-hover-pf: #152b4c;
+$theme-name-pf: #ccd6f6;
 $subTheme-pf: #41629b;
-$theme-subTitle-pf: #a9a297;
+$theme-subTitle-pf: #8892b0;
+$theme-description-pf: #8892b0;
 
 //general styles
 
@@ -27,6 +29,10 @@ $theme-subTitle-pf: #a9a297;
 
 .RQ-subTitle {
   color: $theme-subTitle-pf;
+}
+
+.RQ-description {
+  color: $theme-description-pf;
 }
 //
 

@@ -30,19 +30,18 @@ const AboutPortfolio = ({
   };
 
   return (
-    <div data-testid="AboutPortfolio" className={"AboutPortfolio"}>
+    <div data-testid="AboutPortfolio" className={"AboutPortfolio"} id={"AboutPortfolio"}>
       <Row className={"About RQ-d-flex"} noGutter>
         <Col xs={18} other={10} className={"content"}>
-          <div className={"RQ-d-flex RQ-align-center RQ-mb-4"}>
-            <p className={"RQ-theme RQ-mr-2"}>01.</p>
-            <p>About</p>
+          <div className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-f-26"}>
+            <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>01.</p>
+            <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>About Me</p>
             <hr className={"line"} />
           </div>
           <div className={"circle-section"}>
-            <p className={"RQ-f-12 RQ-mb-4 RQ-ml-4"}>ADJUST BIO LENGTH:</p>
+            <p className={"RQ-f-12 RQ-mb-4 RQ-ml-4 RQ-description"}>ADJUST BIO LENGTH:</p>
             {arrCircle.map((i) => (
               <a
-                href={"#"}
                 key={i}
                 className={`${
                   arrCircle.length - 1 === i || i === 0
@@ -55,12 +54,12 @@ const AboutPortfolio = ({
                 <CircleGreen />
               </a>
             ))}
-            <div>
+            <div className={"RQ-description"}>
               <div className={"left"}>shortest</div>
               <div className={"right"}>longest</div>
             </div>
           </div>
-          <p className={"RQ-mt-5"}>{about}</p>
+          <p className={"RQ-mt-5 RQ-name RQ-f-18"}>{about}</p>
         </Col>
         <Col xs={18} other={8}>
           <Image
@@ -75,7 +74,7 @@ const AboutPortfolio = ({
       <Row className={"thoughts RQ-d-flex RQ-justify-center RQ-mx-5"} noGutter>
         {arrThoughts.map((item) => (
           <Col xs={18} other={6}>
-            <div className={"container"}>
+            <div className={"container RQ-description"}>
               <p className={"RQ-f-14"}>"{item}"</p>
               <p className={"signature RQ-f-13"}>- Renzo Quispe</p>
             </div>

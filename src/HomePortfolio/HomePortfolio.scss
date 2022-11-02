@@ -1,6 +1,8 @@
 @import '../assets/scss/style.scss';
 
 .HomePortfolio {
+  //padding-top: 2rem;
+  height: 100vh;
   align-items: center;
   .download {
     a {
@@ -13,9 +15,8 @@
       border: 1px solid $cyan-pf;
 
       &:hover {
-        background-color: $cyan-pf;
-        color: $white;
-        transition: 0.5s;
+        background-color: $theme-hover-pf;
+        transition: 0.8s;
       }
     }
   }
@@ -24,11 +25,22 @@
     overflow: hidden;
   }
   .scroll {
-    margin-top: 100px;
+    margin-top: 3.5rem;
     a {
       text-decoration: none;
       text-decoration-color: white;
-      color: white;
+      color: $theme-description-pf;
+      //transition: all 0.2s linear;
+      transition: opacity 250ms;
+      animation: fade-in-bottom 0.5s ease-in-out 150ms both;
+      &:hover {
+        color: $theme-pf;
+        transition: 0.8s;
+      }
+      svg {
+        //fill: $theme-description-pf;
+        fill: $theme-pf;
+      }
     }
   }
 }

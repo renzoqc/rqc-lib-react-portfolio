@@ -30,7 +30,7 @@ const ExamplePortofolio = ({
         <HomePortfolio
           greeting={homePortfolio.greeting}
           name={homePortfolio.name}
-          subtitle={homePortfolio.subTitle}
+          subtitle={homePortfolio.subtitle}
           content={homePortfolio.content}
           resume={homePortfolio.resume}
           img={homePortfolio.img}

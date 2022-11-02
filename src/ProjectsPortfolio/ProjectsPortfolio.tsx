@@ -18,7 +18,7 @@ const ProjectsPortfolio = ({ arrProjects }: ProjectsPortfolioProps) => {
       };
     };
   }) => (
-    <div className={"RQ-my-5"} style={{ margin: "50px 0 90px 0" }}>
+    <div className={"RQ-my-5"} style={{ margin: "50px 0 90px 0" }} id={"ProjectsPortfolio"}>
       <Row className={"RQ-d-flex project-content"} noGutter>
         <Col xs={18} other={11} className={"project-img"}>
           <img src={props.content.img.source} alt={"ProjectImg"} />

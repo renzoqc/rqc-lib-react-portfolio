@@ -1,6 +1,11 @@
 @import '../assets/scss/style.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .ExamplePortofolio {
+  background-color: #0B192E;
   .content-center-sides {
     overflow-x: hidden;
     padding: 0px 150px;

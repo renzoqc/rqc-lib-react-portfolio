@@ -10,6 +10,14 @@ p {
   margin: 0px;
 }
 
+.RQ-f-code {
+  font-family: "Fira Code", monospace !important;
+}
+
+.RQ-f-helvetica {
+  font-family: "Helvetica", "serif";
+}
+
 .RQ-f-bold {
   font-weight: $font-bold;
 }
@@ -70,12 +78,24 @@ p {
   font-size: 22px;
 }
 
+.RQ-f-26 {
+  font-size: 26px;
+}
+
 .RQ-f-28 {
   font-size: 28px;
 }
 
+.RQ-f-30 {
+  font-size: 30px;
+}
+
 .RQ-f-60 {
   font-size: 60px;
+}
+
+.RQ-f-70 {
+  font-size: 70px;
 }
 
 .RQ-f-80 {
@@ -104,6 +124,10 @@ p {
   }
 }
 
+.RQ-l-1 {
+  line-height: 1;
+}
+
 .RQ-l-18 {
   line-height: 18px;
 }
@@ -116,6 +140,11 @@ p {
   line-height: 1.8em;
 }
 
+.RQ-l-1_8em {
+  line-height: 1.8rem;
+}
+
 .RQ-one-line {
   white-space: nowrap;
 }
+

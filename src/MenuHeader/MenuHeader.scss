@@ -12,16 +12,20 @@
       margin: 0 1.8em;
       a {
         text-decoration: none;
+        color: #ccd6f6;
+        &:hover {
+          color: $theme-pf;
+          transition: 0.8s;
+        }
       }
     }
     .resume {
       text-decoration: none;
       border-radius: 5px;
-      padding: 5px 15px;
+      padding: 8px 15px;
       transition: 0.3s;
       &:hover {
-        background-color: $cyan-pf;
-        color: $white;
+        background-color: $theme-hover-pf;
         transition: 0.5s;
       }
     }

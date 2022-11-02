@@ -3,7 +3,7 @@ import { ContactProps } from "./Contact.types";
 
 const ContactPortfolio = ({ withText }: ContactProps) => {
   return (
-    <div data-testid="Contact" className={"Contact"}>
+    <div data-testid="Contact" className={"Contact"} id={"ContactPortfolio"}>
       <p className="RQ-d-flex RQ-theme">04. What's Next?</p>
       <h1 className="RQ-d-flex RQ-f-60">Get In Touch</h1>
       <p className="RQ-d-flex RQ-f-16 RQ-w-50">

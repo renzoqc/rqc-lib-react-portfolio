@@ -1,10 +1,11 @@
 @import '../assets/scss/style.scss';
 
 .AboutPortfolio {
+  padding: 3rem 3rem;
+
   .About {
-    //padding: 20px 40px;
     .content {
-      padding: 10px 130px 10px 150px;
+      padding: 1rem 2rem 1rem 2rem;
     }
     .line {
       margin: 0 40px 0 10px;
@@ -42,15 +43,20 @@
   .thoughts {
     margin-top: 80px;
     .container {
-      //background-color: #0e2342;
-      background-color: yellow;
-      color: darkgreen;
       height: 80px;
-      margin: 0 70px;
+      margin: 0 2.2rem;
       padding: 20px;
       border: 1px solid $theme-pf;
       border-radius: 20px;
       position: relative;
+
+      &:hover {
+        color: white;
+        transition: 0.5s;
+      }
+      &:not(:hover) {
+        transition: 0.5s;
+      }
 
       .signature {
         position: absolute;

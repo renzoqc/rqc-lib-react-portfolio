@@ -17,7 +17,7 @@ const ExperiencePortfolio = ({ arrExp }: ExperiencePortfolioProps) => {
   };
 
   return (
-    <div className="main" data-testid="HomePortfolio">
+    <div className="main" data-testid="HomePortfolio" id={"ExperiencePortfolio"}>
       <div className={"header RQ-d-flex RQ-align-center"}>
         <p className={"RQ-theme"}>03.</p>
         <p>Where I've worked</p>
