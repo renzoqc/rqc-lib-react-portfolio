@@ -4,9 +4,9 @@ import { SkillsPortfolioProps } from "./SkillsPortfolio.types";
 const SkillsPortfolio = ({ arrTech }: SkillsPortfolioProps) => {
   return (
     <div data-testid="SkillsPortfolio" className={"SkillsPortfolio"} id={"SkillsPortfolio"}>
-      <div className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-w-50"}>
-        <p className={"RQ-theme RQ-mr-2"}>02.</p>
-        <p>Skillsets</p>
+      <div className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-w-50 RQ-f-26"}>
+        <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>02.</p>
+        <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>Skillsets</p>
         <hr className={"line"} />
       </div>
 

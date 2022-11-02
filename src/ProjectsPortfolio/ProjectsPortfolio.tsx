@@ -181,9 +181,9 @@ const ProjectsPortfolio = ({ arrProjects }: ProjectsPortfolioProps) => {
 
   return (
     <div data-testid="ProjectsPortfolio" className={"ProjectsPortfolio"}>
-      <div className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-ml-3 RQ-w-50"}>
-        <p className={"RQ-theme RQ-mr-2"}>04.</p>
-        <p className={"RQ-one-line"}>Yeah, I work hard 💼 </p>
+      <div className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-ml-3 RQ-f-26 RQ-w-50"}>
+        <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>04.</p>
+        <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>Yeah, I work hard 💼 </p>
         <hr className={"line"} />
       </div>
       <p className={"RQ-ml-6 RQ-mb-5 RQ-f-16"}>

@@ -72,9 +72,9 @@ const AboutPortfolio = ({
         </Col>
       </Row>
       <Row className={"thoughts RQ-d-flex RQ-justify-center RQ-mx-5"} noGutter>
-        {arrThoughts.map((item) => (
+        {arrThoughts.map((item, index) => (
           <Col xs={18} other={6}>
-            <div className={"container RQ-description"}>
+            <div className={`container RQ-description ${index === 0 ? 'RQ-ml-4' : 'RQ-ml-4'}`}>
               <p className={"RQ-f-14"}>"{item}"</p>
               <p className={"signature RQ-f-13"}>- Renzo Quispe</p>
             </div>

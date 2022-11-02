@@ -1,6 +1,12 @@
 @import '../assets/scss/style.scss';
 
 .ProjectsPortfolio {
+  .line {
+    margin: 0 40px 0 10px;
+    color: green;
+    border: 1px solid $theme-pf;
+    width: 100%;
+  }
   .project-content {
     position: relative;
     .project-desc {
@@ -58,8 +64,8 @@
       position: absolute;
     }
     .project-img {
-      position:relative; 
-      margin-left:auto; 
+      position:relative;
+      margin-left:auto;
       right:0;
       // position: absolute;
       // right: 0;

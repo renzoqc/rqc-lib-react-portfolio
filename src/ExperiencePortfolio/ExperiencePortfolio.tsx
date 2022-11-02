@@ -18,10 +18,10 @@ const ExperiencePortfolio = ({ arrExp }: ExperiencePortfolioProps) => {
 
   return (
     <div className="main" data-testid="HomePortfolio" id={"ExperiencePortfolio"}>
-      <div className={"header RQ-d-flex RQ-align-center"}>
-        <p className={"RQ-theme"}>03.</p>
-        <p>Where I've worked</p>
-        <hr />
+      <div className={"header RQ-d-flex RQ-align-center RQ-f-26"}>
+        <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>03.</p>
+        <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>Where I've worked</p>
+        <hr className={"line"} />
       </div>
       <Row className={"RQ-mt-8 RQ-pl-6"} noGutter>
         <Col xs={18} other={5} className="company">
