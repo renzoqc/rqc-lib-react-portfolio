@@ -59,7 +59,7 @@
             list-style: none;
             list-style-image: initial;            
             
-            li a {
+            > li a {
                 padding: 10px;
                 display: inline-block;
                 text-decoration: none;
@@ -71,6 +71,13 @@
                     width: 20px;
                     height: 20px;
                 }
+                // &:hover {
+                //     color: $theme-pf;
+                //     transition: 0.8s;
+                // }
+                // &:not(:hover) {
+                //     transition: 0.5s;
+                // }
             }
             &::after {
                 content: "";

@@ -43,7 +43,10 @@ const ExamplePortofolio = ({
         <SkillsPortfolio arrTech={skillsPortfolio.arrTech} />
         <ExperiencePortfolio arrExp={experiencePortfolio.arrExp} />
         <ProjectsPortfolio arrProjects={projectsPortfolio.arrProjects} />
-        <ContactPortfolio withText={contactPortfolio.withText} />
+        <ContactPortfolio
+          content={contactPortfolio.content}
+          buttonText={contactPortfolio.buttonText}
+        />
       </div>
     </div>
   );

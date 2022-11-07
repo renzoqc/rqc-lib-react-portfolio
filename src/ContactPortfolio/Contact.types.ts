@@ -1,6 +1,7 @@
 export interface ContactProps {
-    /**
-     * Defines ...
-     */
-    withText: any;
+  /**
+   * Defines ...
+   */
+  content: string;
+  buttonText: string;
 }

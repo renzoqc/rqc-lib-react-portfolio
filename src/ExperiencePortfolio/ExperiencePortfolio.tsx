@@ -17,18 +17,24 @@ const ExperiencePortfolio = ({ arrExp }: ExperiencePortfolioProps) => {
   };
 
   return (
-    <div className="main" data-testid="HomePortfolio" id={"ExperiencePortfolio"}>
+    <div
+      className="main"
+      data-testid="ExperiencePortfolio"
+      id={"ExperiencePortfolio"}
+    >
       <div className={"header RQ-d-flex RQ-align-center RQ-f-26"}>
         <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>03.</p>
-        <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>Where I've worked</p>
+        <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>
+          Where I've worked
+        </p>
         <hr className={"line"} />
       </div>
       <Row className={"RQ-mt-8 RQ-pl-6"} noGutter>
         <Col xs={18} other={5} className="company">
           {arrExp.map((item, index) => (
-            <a href="#" onClick={() => updateStateExp(index)}>
+            <a onClick={() => updateStateExp(index)}>
               <div
-                className={`RQ-d-flex RQ-align-center left-side ${
+                className={`RQ-d-flex RQ-align-center left-side RQ-f-code ${
                   index === expIndex ? "active" : ""
                 }`}
               >
@@ -39,10 +45,12 @@ const ExperiencePortfolio = ({ arrExp }: ExperiencePortfolioProps) => {
         </Col>
         <Col xs={18} other={13} className="content">
           <div className="header RQ-d-flex RQ-align-center">
-            <h3 className="RQ-m-0">{exp.title}&nbsp;</h3>
-            <a href="#">@{exp.company}</a>
+            <h3 className="RQ-m-0 RQ-name RQ-f-18">{exp.title}&nbsp;</h3>
+            <a href="#" className="RQ-f-bold RQ-f-18">
+              @{exp.company}
+            </a>
           </div>
-          <p className="RQ-f-13">{exp.date}</p>
+          <p className="RQ-f-14 RQ-description">{exp.date}</p>
           <ul>
             {exp.tasks.map((item, index) => (
               <li key={index}>{item.content}</li>

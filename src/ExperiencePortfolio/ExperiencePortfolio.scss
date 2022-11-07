@@ -2,7 +2,7 @@
 
 
 .main {
-  margin: 0 20rem;
+  margin: 5rem 10rem;
   .line {
     margin: 0 40px 0 10px;
     color: green;
@@ -18,25 +18,33 @@
   }
 
   .company {
+    padding-right: 4rem;
     a {
       text-decoration: none;
       text-decoration-color: white;
-      color: white;
+      color: $theme-description-pf;
+      cursor: pointer;
     }
 
     .left-side {
-      border-left: 2px solid $subTheme-pf;
+      border-left: 2px solid #233554;
       height: 50px;
-
+      font-size: 14px;
+      &:hover {
+        background-color: $theme-selection-pf;
+        transition: 0.5s;
+        color: $theme-pf;
+      }
       &.active {
        border-left: 2px solid $theme-pf;
+       color: $theme-pf;
       }
     }
   }
 
   .content {
     p {
-      margin: 0;
+      margin: 0.5rem 0;
       padding:0;
     }
     ul {
@@ -44,6 +52,7 @@
       margin: 25px 0 0 0;
       list-style-image: initial;
       list-style: none;
+      color: $theme-description-pf;
       li {
         position: relative;
         padding-left: 30px;
@@ -57,9 +66,6 @@
       }
     }
     .header {
-      h3 {
-        color: $subTheme-pf;
-      }
       a {
         color: $theme-pf;
         text-decoration: none;

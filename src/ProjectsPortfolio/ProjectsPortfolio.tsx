@@ -18,7 +18,11 @@ const ProjectsPortfolio = ({ arrProjects }: ProjectsPortfolioProps) => {
       };
     };
   }) => (
-    <div className={"RQ-my-5"} style={{ margin: "50px 0 90px 0" }} id={"ProjectsPortfolio"}>
+    <div
+      className={"RQ-my-5"}
+      style={{ margin: "50px 0 90px 0" }}
+      id={"ProjectsPortfolio"}
+    >
       <Row className={"RQ-d-flex project-content"} noGutter>
         <Col xs={18} other={11} className={"project-img"}>
           <img src={props.content.img.source} alt={"ProjectImg"} />
@@ -27,7 +31,7 @@ const ProjectsPortfolio = ({ arrProjects }: ProjectsPortfolioProps) => {
           <p className={"RQ-theme RQ-f-14 RQ-text-right"}>
             {props.content.description.type}
           </p>
-          <h1 className={"RQ-f-28 RQ-text-right"}>
+          <h1 className={"RQ-f-28 RQ-text-right RQ-white RQ-hover-theme"}>
             {props.content.description.title}
           </h1>
           <div className="project-summary">
@@ -35,7 +39,7 @@ const ProjectsPortfolio = ({ arrProjects }: ProjectsPortfolioProps) => {
               {props.content.description.info}
             </p>
           </div>
-          <p className={"RQ-my-4 RQ-text-right"}>
+          <p className={"RQ-my-4 RQ-text-right RQ-description"}>
             {props.content.description.stack}
           </p>
           <div className="project-links">
@@ -112,7 +116,7 @@ const ProjectsPortfolio = ({ arrProjects }: ProjectsPortfolioProps) => {
           <p className={"RQ-theme RQ-f-14 RQ-text-left"}>
             {props.content.description.type}
           </p>
-          <h1 className={"RQ-f-28 RQ-text-left"}>
+          <h1 className={"RQ-f-28 RQ-text-left RQ-white RQ-hover-theme"}>
             {props.content.description.title}
           </h1>
           <div className="project-summary">
@@ -120,7 +124,7 @@ const ProjectsPortfolio = ({ arrProjects }: ProjectsPortfolioProps) => {
               {props.content.description.info}
             </p>
           </div>
-          <p className={"RQ-my-4 RQ-text-left"}>
+          <p className={"RQ-my-4 RQ-text-left RQ-description"}>
             {props.content.description.stack}
           </p>
           <div className="project-links">
@@ -181,12 +185,16 @@ const ProjectsPortfolio = ({ arrProjects }: ProjectsPortfolioProps) => {
 
   return (
     <div data-testid="ProjectsPortfolio" className={"ProjectsPortfolio"}>
-      <div className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-ml-3 RQ-f-26 RQ-w-50"}>
+      <div
+        className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-ml-3 RQ-f-26 RQ-w-50"}
+      >
         <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>04.</p>
-        <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>Yeah, I work hard 💼 </p>
+        <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>
+          Yeah, I work hard 💼{" "}
+        </p>
         <hr className={"line"} />
       </div>
-      <p className={"RQ-ml-6 RQ-mb-5 RQ-f-16"}>
+      <p className={"RQ-ml-6 RQ-mb-5 RQ-f-16 RQ-name RQ-f-18"}>
         Each project is unique. Here are some of my works.
       </p>
       {arrProjects.map((item, index) =>

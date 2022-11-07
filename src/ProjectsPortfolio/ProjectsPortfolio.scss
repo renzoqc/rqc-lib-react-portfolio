@@ -1,6 +1,7 @@
 @import '../assets/scss/style.scss';
 
 .ProjectsPortfolio {
+  padding: 5rem 0 1rem 0;
   .line {
     margin: 0 40px 0 10px;
     color: green;
@@ -23,6 +24,10 @@
         object-fit: cover;
         &:hover {
           filter: blur(0) saturate(1) brightness(111%);
+          transition: 0.5s;
+        }
+        &:not(:hover) {
+          transition: 0.5s;
         }
       }
     }
@@ -48,6 +53,9 @@
         color: #b0cdf1;
         &:hover {
           color: $theme-pf;
+          transition: 0.5s;
+        }
+        &:not(:hover) {
           transition: 0.5s;
         }
       }
@@ -100,6 +108,9 @@
         color: #b0cdf1;
         &:hover {
           color: $theme-pf;
+          transition: 0.5s;
+        }
+        &:not(:hover) {
           transition: 0.5s;
         }
       }
