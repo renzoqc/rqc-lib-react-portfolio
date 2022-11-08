@@ -34,8 +34,12 @@
       transition: opacity 250ms;
       animation: fade-in-bottom 0.5s ease-in-out 150ms both;
       &:hover {
-        color: $theme-pf;
-        transition: 0.8s;
+        color: white;
+        transition: 0.4s;
+        transform: translateY(-3px);
+      }
+      &:not(:hover) {
+        transition: 0.5s;
       }
       svg {
         //fill: $theme-description-pf;
