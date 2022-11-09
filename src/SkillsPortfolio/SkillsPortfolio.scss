@@ -14,10 +14,14 @@
     color: $theme-pf;
     position: relative;
 
+    .parallax-inner {
+      z-index: -1;
+    }
     .back {
       display: flex;
       position: relative;
       min-height: 300px;
+      // transform: translate3d(0%, -249.108px, 0px);
       > p {
         position: absolute;
       }
