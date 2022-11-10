@@ -1,6 +1,12 @@
 @import '../assets/scss/style.scss';
 
 .SidesPortfolio {
+    @include media-breakpoint-up(sm) {
+        display: block;
+    }
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
     max-width: 100%;
     overflow-x: hidden;
     .right {

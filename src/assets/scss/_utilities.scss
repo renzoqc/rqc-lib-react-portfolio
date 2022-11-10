@@ -143,3 +143,11 @@
 .RQ-align-center {
   align-items: center;
 }
+
+.RQ-d-sm-block {
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+}
