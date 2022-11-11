@@ -1,13 +1,20 @@
+// style={{ display: `${showSideBar ? "block" : "none"}` }}filter: blur(5px) brightness(0.7);
 import "./HeaderPortfolio.scss";
 import { HeaderPortfolioProps } from "./HeaderPortfolio.types";
-import { linkTo } from "@storybook/addon-links";
 import { Col, Row } from "../Grid/Grid";
 import Logo from "../Logo/Logo";
 import MenuHeader from "../MenuHeader/MenuHeader";
+import { useState } from "react";
 
 const HeaderPortfolio = ({ logo, menuHeader }: HeaderPortfolioProps) => {
+  const [showSideBar, setShowSideBar] = useState<Boolean>(false);
+
+  const changeStateSideBar = () => {
+    setShowSideBar(!showSideBar);
+  };
+
   return (
-    <div className="main-menu">
+    <div className={"main-menu"}>
       <Row
         data-testid="HeaderPortfolio"
         className={"HeaderPortfolio RQ-d-flex"}
@@ -25,7 +32,7 @@ const HeaderPortfolio = ({ logo, menuHeader }: HeaderPortfolioProps) => {
             logo={menuHeader.logo}
             resume={menuHeader.resume}
           />
-          <a>
+          <a onClick={() => changeStateSideBar()}>
             <svg
               className={""}
               width="30px"
@@ -51,8 +58,15 @@ const HeaderPortfolio = ({ logo, menuHeader }: HeaderPortfolioProps) => {
           </a>
         </Col>
       </Row>
-      <div className="side-bar">
-        <a href="#" className="sideBar-close">
+      <div
+        className="side-bar"
+        style={{ display: `${showSideBar ? "block" : "none"}` }}
+      >
+        <a
+          href="#"
+          className="sideBar-close"
+          onClick={() => changeStateSideBar()}
+        >
           <svg
             className={""}
             width="30px"
