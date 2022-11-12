@@ -35,8 +35,8 @@ const AboutPortfolio = ({
       className={"AboutPortfolio"}
       id={"AboutPortfolio"}
     >
-      <Row className={"About RQ-d-flex"} noGutter>
-        <Col xs={18} other={10} className={"content"}>
+      <Row className={"About RQ-d-flex"} noGutter flex>
+        <Col omd={10} umd={18} className={"content"}>
           <div className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-f-26"}>
             <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>01.</p>
             <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>
@@ -68,9 +68,9 @@ const AboutPortfolio = ({
               <div className={"right"}>longest</div>
             </div>
           </div>
-          <p className={"RQ-mt-5 RQ-name RQ-f-18"}>{about}</p>
+          <p className={"RQ-name RQ-f-18 RQ-description-content"}>{about}</p>
         </Col>
-        <Col xs={18} other={8}>
+        <Col omd={8} umd={18}>
           <Image
             classImg={""}
             pathImage={pathImage}
