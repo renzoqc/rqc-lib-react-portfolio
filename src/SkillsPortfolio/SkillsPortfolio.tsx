@@ -8,7 +8,7 @@ const SkillsPortfolio = ({ arrTech }: SkillsPortfolioProps) => {
       className={"SkillsPortfolio"}
       id={"SkillsPortfolio"}
     >
-      <div className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-w-50 RQ-f-26"}>
+      <div className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-f-26"}>
         <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>02.</p>
         <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>
           Skillsets

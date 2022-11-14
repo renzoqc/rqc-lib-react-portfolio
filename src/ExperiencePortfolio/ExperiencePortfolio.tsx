@@ -16,6 +16,10 @@ const ExperiencePortfolio = ({ arrExp }: ExperiencePortfolioProps) => {
     setExpIndex(i);
   };
 
+  const selectCompany = (event) => {
+    updateStateExp(event.target.value);
+  };
+
   return (
     <div
       className="main"
@@ -29,8 +33,18 @@ const ExperiencePortfolio = ({ arrExp }: ExperiencePortfolioProps) => {
         </p>
         <hr className={"line"} />
       </div>
-      <Row className={"RQ-mt-8 RQ-pl-6"} noGutter>
-        <Col xs={18} other={5} className="company">
+      <div className="custom-select">
+        <p className={'RQ-description RQ-d-flex RQ-justify-center RQ-mb-2'}>Select company:</p>
+        <div className="RQ-d-flex RQ-justify-center">
+          <select onChange={selectCompany}>
+            {arrExp.map((item, index) => (
+                <option key={index} value={index}>{item.company}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+      <Row className={"content-exp"} noGutter>
+        <Col xs={0} other={5} className="company">
           {arrExp.map((item, index) => (
             <a onClick={() => updateStateExp(index)}>
               <div

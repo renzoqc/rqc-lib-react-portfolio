@@ -36,7 +36,7 @@ const AboutPortfolio = ({
       id={"AboutPortfolio"}
     >
       <Row className={"About RQ-d-flex"} noGutter flex>
-        <Col omd={10} umd={18} className={"content"}>
+        <Col olg={10} ulg={18} className={"content"}>
           <div className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-f-26"}>
             <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>01.</p>
             <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>
@@ -70,7 +70,7 @@ const AboutPortfolio = ({
           </div>
           <p className={"RQ-name RQ-f-18 RQ-description-content"}>{about}</p>
         </Col>
-        <Col omd={8} umd={18}>
+        <Col olg={8} ulg={18}>
           <Image
             classImg={""}
             pathImage={pathImage}
@@ -80,15 +80,15 @@ const AboutPortfolio = ({
           />
         </Col>
       </Row>
-      <Row className={"thoughts RQ-d-flex RQ-justify-center RQ-mx-5"} noGutter>
+      <Row className={"thoughts RQ-d-flex RQ-justify-center RQ-mx-5"} noGutter flex>
         {arrThoughts.map((item, index) => (
-          <Col xs={18} other={6}>
+          <Col umd={18} omd={6}>
             <div
               className={`container RQ-description ${
                 index === 0 ? "RQ-ml-4" : "RQ-ml-4"
               }`}
             >
-              <p className={"RQ-f-14"}>"{item}"</p>
+              <p className={"RQ-f-14"}>"{item}"</p><br/>
               <p className={"signature RQ-f-13"}>- Renzo Quispe</p>
             </div>
           </Col>
