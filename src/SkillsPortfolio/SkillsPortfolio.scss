@@ -1,0 +1,70 @@
+@import '../assets/scss/style.scss';
+
+.SkillsPortfolio {
+  display: block;
+  padding: 5rem 0 2rem 0;
+  @include media-breakpoint-up(sm) {
+    padding: 5rem 0;
+  }
+  .line {
+    margin: 0 40px 0 10px;
+    color: green;
+    border: 1px solid $theme-pf;
+    width: 100%;
+    @include media-breakpoint-up(sm) {
+      width: 35%;
+    }
+  }
+
+  .main-skills {
+    color: $theme-pf;
+    position: relative;
+
+    .parallax-inner {
+      z-index: -1;
+    }
+    .back {
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+      display: flex;
+      position: relative;
+      min-height: 300px;
+      // transform: translate3d(0%, -249.108px, 0px);
+      > p {
+        position: absolute;
+      }
+    }
+
+    .front {
+      @include media-breakpoint-down(sm) {
+        margin: 5rem 0 0 0;
+        position: static;
+      }
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      //margin-left: auto;
+      //margin-right: auto;
+      //width: 100px;
+
+      .icon1, .icon2, .icon3, .icon4 {
+        @include media-breakpoint-down(sm) {
+          margin: 0 0.6rem;
+          width: 60px;
+        }
+        @include media-md {
+          margin: 0 40px;
+          width: 60px;
+        }
+        width: 70px;
+        margin: 0 90px;
+      }
+
+    }
+
+  }
+
+}

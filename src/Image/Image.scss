@@ -1,0 +1,46 @@
+@import '../assets/scss/style.scss';
+
+.Image {
+  .image-border {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 266px;
+    transform: translate(15px, 15px);
+
+
+    @include media-breakpoint-up(md) {
+      width: 350px;
+      height: 400px;
+      transform: translate(20px, 20px);
+    }
+
+    border: 2px solid $theme-pf;
+    transition: transform 150ms;
+    z-index: 1;
+  }
+
+  img {
+    z-index: 2;
+    width: 200px;
+    height: 266px;
+
+    &:hover.image-fade {
+      filter: blur(0) saturate(1) brightness(111%);
+    }
+    &:hover ~ .image-border {
+      transform: translate(10px, 10px);
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 350px;
+      height: 400px;
+      &:hover ~ .image-border {
+        transform: translate(15px, 15px);
+      }
+    }
+
+
+
+  }
+}

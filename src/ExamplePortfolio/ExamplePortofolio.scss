@@ -1,0 +1,20 @@
+@import '../assets/scss/style.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.ExamplePortofolio {
+  background-color: #0B192E;
+  .content-center-sides {
+    overflow-x: hidden;
+    padding: 0 150px;
+    max-width: 100%;
+    @include media-breakpoint-down(md) {
+      padding: 0 5.5rem;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 0 1.5rem;
+    }
+  }
+}

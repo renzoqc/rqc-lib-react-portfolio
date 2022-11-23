@@ -1,0 +1,131 @@
+@import '../assets/scss/style.scss';
+
+
+.main {
+  .custom-select {
+    margin: 2rem 0;
+    @media only screen and (min-width: 481px) {
+      display: none;
+    }
+
+    select {
+      font-size: 18px;
+      background-color: transparent;
+      padding: 0.5em 3.5em 0.5em 1em;
+      color: $theme-description-pf;
+      border: 0.5px solid $theme-pf;
+      border-radius: 5px;
+      //display: none; /*hide original SELECT element:*/
+      background-image:
+              linear-gradient(45deg, transparent 50%, $theme-pf 50%),
+              linear-gradient(135deg, $theme-pf 50%, transparent 50%);
+      background-position:
+              calc(100% - 20px) calc(1em + 2px),
+              calc(100% - 15px) calc(1em + 2px),
+              100% 0;
+      background-size:
+              5px 5px,
+              5px 5px,
+              2.5em 2.5em;
+      background-repeat: no-repeat;
+      //hide arrow default
+      margin: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+    }
+
+  }
+
+  .content-exp {
+    @include media-breakpoint-down(sm) {
+      margin-top: 1rem;
+      padding-left: 0;
+    }
+    margin-top: 6rem;
+    padding-left: 1rem;
+  }
+
+
+  @include media-breakpoint-down(sm) {
+    margin: 5rem 0rem;
+  }
+  margin: 5rem 10rem;
+  .line {
+    margin: 0 40px 0 10px;
+    color: green;
+    border: 1px solid $theme-pf;
+    width: 100%;
+  }
+  .header {
+    white-space: nowrap;
+    hr {
+      border: 1px solid $theme-pf;
+      width: 100%;
+    }
+  }
+
+  .company {
+    padding-right: 4rem;
+    a {
+      text-decoration: none;
+      text-decoration-color: white;
+      color: $theme-description-pf;
+      cursor: pointer;
+    }
+
+    .left-side {
+      border-left: 2px solid #233554;
+      height: 50px;
+      font-size: 14px;
+      &:hover {
+        background-color: $theme-selection-pf;
+        transition: 0.5s;
+        color: $theme-pf;
+      }
+      &.active {
+       border-left: 2px solid $theme-pf;
+       color: $theme-pf;
+      }
+    }
+  }
+
+  .content {
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+    }
+    p {
+      margin: 0.5rem 0;
+      padding:0;
+    }
+    ul {
+      padding: 0;
+      margin: 25px 0 0 0;
+      //list-style-image: initial;
+      list-style: none;
+      color: $theme-description-pf;
+      li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
+      }
+      li::before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: $theme-pf;
+      }
+    }
+    .header {
+      a {
+        color: $theme-pf;
+        text-decoration: none;
+        text-decoration-color: white;
+      }
+    }
+
+  }
+}

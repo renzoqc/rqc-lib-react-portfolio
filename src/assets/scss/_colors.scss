@@ -1,0 +1,74 @@
+
+$cyan: #2ac0f1;
+$cyan-pf: #64ffda;
+$orange: #FFA401;
+$white-green: #E6F3EF;
+$green: #00875a;
+$gray: #787878;
+$white-red: #fce9eb;
+$red: #e61f37;
+$gray-shadow: #8fabc34d;
+$white: white;
+
+$theme-pf: $cyan-pf;
+$theme-hover-pf: #152b4c;
+$theme-name-pf: #ccd6f6;
+$subTheme-pf: #41629b;
+$theme-subTitle-pf: #8892b0;
+$theme-description-pf: #8892b0;
+$theme-selection-pf: #112240;
+$theme-side-bar-pf: #112240;
+$theme-project-card : #0e2342;
+
+//general styles
+
+.RQ-theme {
+  color: $theme-pf;
+}
+
+.RQ-name {
+  color: $theme-name-pf;
+}
+
+.RQ-subTitle {
+  color: $theme-subTitle-pf;
+}
+
+.RQ-description {
+  color: $theme-description-pf;
+}
+//
+
+.RQ-cyan-pf {
+  color: $cyan-pf;
+}
+
+.RQ-white {
+  color: $white;
+}
+
+.RQ-red {
+  color: $red;
+}
+
+.RQ-orange {
+  color: $orange;
+}
+
+.RQ-green {
+  color: $green;
+}
+
+.RQ-bg-green {
+  background-color: $green;
+}
+
+.RQ-hover-theme {
+  &:hover {
+    color: $theme-pf;
+    transition: 0.8s;
+  }
+  &:not(:hover) {
+    transition: 0.5s;
+  }
+}

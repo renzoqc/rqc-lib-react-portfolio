@@ -1,0 +1,130 @@
+@import '../assets/scss/style.scss';
+
+@include media-breakpoint-down(sm) {
+  .HomePortfolio {
+    .content {
+      margin-top: 3rem;
+      h1 {
+        margin-top: 1rem;
+        font-size: 40px;
+      }
+      h2 {
+        margin-top: 1rem;
+        font-size: 40px;
+      }
+      .home-description p {
+        margin-top: 1rem;
+        font-size: 18px;
+      }
+    }
+    //height: 100vh;
+
+    .download {
+      margin-top: 3rem;
+      a {
+        border-radius: 5px;
+        padding: 15px 15px;
+        transition: 0.3s;
+        width: 180px;
+        text-decoration: none;
+        text-decoration-color: initial;
+        border: 1px solid $cyan-pf;
+
+        &:hover {
+          background-color: $theme-hover-pf;
+          transition: 0.8s;
+        }
+      }
+    }
+    .img-about {
+      height: 300px;
+      overflow: hidden;
+      display: none !important;
+    }
+
+    .scroll {
+      margin-top: 3.5rem;
+      a {
+        text-decoration: none;
+        text-decoration-color: white;
+        color: $theme-description-pf;
+        //transition: all 0.2s linear;
+        transition: opacity 250ms;
+        animation: fade-in-bottom 0.5s ease-in-out 150ms both;
+        &:hover {
+          color: white;
+          transition: 0.4s;
+          transform: translateY(-3px);
+        }
+        &:not(:hover) {
+          transition: 0.5s;
+        }
+        svg {
+          //fill: $theme-description-pf;
+          fill: $theme-pf;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .HomePortfolio {
+    //padding-top: 2rem;
+    .content {
+      h1 {
+        font-size: 80px;
+      }
+      h2 {
+        font-size: 80px;
+      }
+    }
+    height: 100vh;
+    align-items: center;
+    .download {
+      a {
+        border-radius: 5px;
+        padding: 15px 15px;
+        transition: 0.3s;
+        width: 180px;
+        text-decoration: none;
+        text-decoration-color: initial;
+        border: 1px solid $cyan-pf;
+
+        &:hover {
+          background-color: $theme-hover-pf;
+          transition: 0.8s;
+        }
+      }
+    }
+    .img-about {
+      height: 300px;
+      overflow: hidden;
+    }
+    .scroll {
+      margin-top: 3.5rem;
+      a {
+        text-decoration: none;
+        text-decoration-color: white;
+        color: $theme-description-pf;
+        //transition: all 0.2s linear;
+        transition: opacity 250ms;
+        animation: fade-in-bottom 0.5s ease-in-out 150ms both;
+        &:hover {
+          color: white;
+          transition: 0.4s;
+          transform: translateY(-3px);
+        }
+        &:not(:hover) {
+          transition: 0.5s;
+        }
+        svg {
+          //fill: $theme-description-pf;
+          fill: $theme-pf;
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,205 @@
+@import '../assets/scss/style.scss';
+
+.ProjectsPortfolio {
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+  }
+  padding: 5rem 0 1rem 0;
+
+  .projects-desc {
+    @include media-breakpoint-up(sm) {
+      margin-left: 3.5rem;
+    }
+  }
+
+  .projects-header {
+    @include media-breakpoint-down(sm) {
+      margin: 0 0 2rem 0;
+    }
+    margin: 0 0 4rem 2rem;
+    .line {
+      margin: 0 40px 0 10px;
+      color: green;
+      border: 1px solid $theme-pf;
+      width: 28%;
+    }
+  }
+
+  .projects-desktop {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+    .project-content {
+      position: relative;
+      .project-desc {
+        right: 0;
+        width: 45%;
+        z-index: 2;
+        position: absolute;
+        .list-stack-card {
+          margin: 2rem 0;
+          color: $theme-description-pf;
+          ul {
+            justify-content: flex-end;
+            display: flex;
+            list-style: none;
+            li {
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+      .project-img {
+        position: relative;
+        img {
+          border-radius: 5px;
+          width: 100%;
+          object-fit: cover;
+          &:hover {
+            filter: blur(0) saturate(1) brightness(111%);
+            transition: 0.5s;
+          }
+          &:not(:hover) {
+            transition: 0.5s;
+          }
+        }
+      }
+      .project-summary {
+        background-color: $theme-project-card;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px -15px #020c1bb3;
+        p {
+          padding: 30px;
+        }
+        strong {
+          color: $theme-pf;
+        }
+        a {
+          color: $theme-pf;
+          text-decoration: none;
+        }
+      }
+      .project-links {
+        float: right;
+        .project-icon {
+          width: 20px;
+          color: #b0cdf1;
+          &:hover {
+            color: $theme-pf;
+            transition: 0.5s;
+          }
+          &:not(:hover) {
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+    .project-content-opposite {
+      position: relative;
+      display: inline-flex;
+      width: 100%;
+      .project-desc {
+        width: 45%;
+        z-index: 2;
+        position: absolute;
+        .list-stack-card {
+          margin: 2rem 0;
+          color: $theme-description-pf;
+          ul {
+            padding-left: 0;
+            justify-content: flex-start;
+            display: flex;
+            list-style: none;
+            li {
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+      .project-img {
+        position:relative;
+        margin-left:auto;
+        right:0;
+        // position: absolute;
+        // right: 0;
+        img {
+          border-radius: 5px;
+          width: 100%;
+          object-fit: cover;
+          &:hover {
+            filter: blur(0) saturate(1) brightness(111%);
+            transition: 0.5s;
+          }
+          &:not(:hover) {
+            transition: 0.5s;
+          }
+        }
+      }
+      .project-summary {
+        background-color: #0e2342;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px -15px #020c1bb3;
+        p {
+          padding: 30px;
+        }
+        strong {
+          color: $theme-pf;
+        }
+        a {
+          color: $theme-pf;
+          text-decoration: none;
+        }
+      }
+      .project-links {
+        float: left;
+        .project-icon {
+          width: 20px;
+          color: #b0cdf1;
+          &:hover {
+            color: $theme-pf;
+            transition: 0.5s;
+          }
+          &:not(:hover) {
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+
+  .projects-mobile {
+    .project-mobile-card {
+      margin: 2.5rem 0 ;
+      padding: 1.8rem 1rem;
+      background-color: $theme-project-card;
+      box-shadow: 0 10px 30px -15px #020c1bb3;
+      border-radius: 10px;
+      .project-summary {
+        a {
+          text-decoration: none;
+          color: $theme-pf;
+        }
+      }
+    }
+    .project-links {
+      .project-icon {
+        width: 20px;
+        color: #b0cdf1;
+        &:hover {
+          color: $theme-pf;
+          transition: 0.5s;
+        }
+        &:not(:hover) {
+          transition: 0.5s;
+        }
+      }
+    }
+    @include media-breakpoint-up(xs) {
+      margin: 0 4rem;
+    }
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+}

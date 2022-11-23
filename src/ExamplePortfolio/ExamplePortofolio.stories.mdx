@@ -1,0 +1,266 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import ExamplePortofolio from './ExamplePortofolio';
+
+<Meta title="ExamplePortofolio" component={ExamplePortofolio} />
+
+# ExamplePortofolio
+
+## ExamplePortofolio props
+<ArgsTable of={ExamplePortofolio} />
+
+## Description
+
+`ExamplePortofolio` component is the header of portfolio.
+
+## Demo
+
+export const Template = (args) => {
+    return <ExamplePortofolio {...args} />
+}
+
+<Story name="ExamplePortofolio" args={{
+    headerPortfolio: {
+        logo: {
+            pathImage: 'img/charmander.png',
+            altImage: 'portfolio',
+            withText: true,
+        },
+        menuHeader: {
+            menu: {
+                colorNumber: 'cyan-pf',
+                colorItem: 'white',
+                data: [
+                    {
+                        name: 'About',
+                        goTo: '#AboutPortfolio'
+                    },
+                    {
+                        name: 'Skillsets',
+                        goTo: '#SkillsPortfolio'
+                    },
+                    {
+                        name: 'Work',
+                        goTo: '#ExperiencePortfolio'
+                    },
+                    {
+                        name: 'Projects',
+                        goTo: '#ProjectsPortfolio'
+                    },
+                    {
+                        name: 'Contact',
+                        goTo: '#ContactPortfolio'
+                    }
+                ]
+            },
+            logo: {
+                path: '/'
+            },
+            resume: {
+                name: 'Resume',
+                goTo: '/',
+                color: 'cyan-pf'
+            }
+        }
+    },
+    sidesPortfolio: {
+        left: {
+            github: {
+                show: true,
+                url: 'https://www.github.com/'
+            },
+            instagram: {
+                show: true,
+                url: 'https://www.instagram.com/'
+            },
+            twitter: {
+                show: true,
+                url: 'https://www.twitter.com/'
+            },
+            linkedin: {
+                show: true,
+                url: 'https://www.linkedin.com/'
+            },
+            editor: {
+                show: true,
+                url: 'https://www.codepen.com/'
+            }
+        },
+        right: {
+            email: 'renzo.quispe.c@uni.pe'
+        }
+    },
+    homePortfolio: {
+        greeting: 'Hi, my name is',
+        name: 'Renzo Quispe.',
+        subtitle: 'I build things for the web.',
+        content: "I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at Upstatement.",
+        resume: {
+            text: 'Download Resume'
+        },
+        img: {
+            path: 'img/bartolito.png',
+            alt: 'photo',
+        }
+    },
+    aboutPortfolio: {
+        header: {
+            numberOrder: '01',
+            text: "About Me"
+        },
+        pathImage: 'img/bartolito.png',
+        arrAbout: [
+            "UNO Jason Lengstorf is the VP of Developer Experience at Netlify and the host of Learn With Jason, a live-streamed video show where he pair programs to learn something new in 90 minutes. As a keynote speaker and author, Jason focuses on building healthier teams through trust, curiosity, and play. He's trying his very best to follow his own advice. He lives in Portland, Oregon.\n",
+            "DOS Jason Lengstorf is the VP of Developer Experience at Netlify and the host of Learn With Jason, a live-streamed video show where he pair programs to learn something new in 90 minutes. As a keynote speaker and author, Jason focuses on building healthier teams through trust, curiosity, and play. He's trying his very best to follow his own advice. He lives in Portland, Oregon.\n",
+            "TRES Jason Lengstorf is the VP of Developer Experience at Netlify and the host of Learn With Jason, a live-streamed video show where he pair programs to learn something new in 90 minutes. As a keynote speaker and author, Jason focuses on building healthier teams through trust, curiosity, and play. He's trying his very best to follow his own advice. He lives in Portland, Oregon.\n",
+            "CUATRO Jason Lengstorf is the VP of Developer Experience at Netlify and the host of Learn With Jason, a live-streamed video show where he pair programs to learn something new in 90 minutes. As a keynote speaker and author, Jason focuses on building healthier teams through trust, curiosity, and play. He's trying his very best to follow his own advice. He lives in Portland, Oregon.\n",
+            "CINCO Jason Lengstorf is the VP of Developer Experience at Netlify and the host of Learn With Jason, a live-streamed video show where he pair programs to learn something new in 90 minutes. As a keynote speaker and author, Jason focuses on building healthier teams through trust, curiosity, and play. He's trying his very best to follow his own advice. He lives in Portland, Oregon.\n",
+        ],
+        arrThoughts: [
+            "Simplicity is the baddest choice to be the best.",
+            "I know I’m not successful enough, but I’m passionate enough not to worry about success.",
+            "Creativity is the driver of an unstoppable train called Passion.",
+        ]
+    },
+    skillsPortfolio: {
+        header: {
+            numberOrder: '02',
+            text: "Skillsets"
+        },
+        arrTech: [
+            { name: "CSS3", position: { top: "10%", left: "15%" } },
+            { name: "PostgreSQL", position: { top: "4%", left: "26%" } },
+            { name: "Docker", position: { top: "30%", left: "22%" } },
+            { name: "NestJS", position: { top: "25%", left: "46%" } },
+            { name: "Sass", position: { top: "10%", left: "56%" } },
+            { name: "ES6", position: { top: "38%", left: "66%" } },
+            { name: "Javascript", position: { top: "12%", left: "71%" } },
+            { name: "Python", position: { top: "28%", left: "85%" } },
+            { name: "Git", position: { top: "90%", left: "11%" } },
+            { name: "MongoDB", position: { top: "95%", left: "30%" } },
+            { name: "EspressJS", position: { top: "85%", left: "55%" } },
+            { name: "Typescript", position: { top: "94%", left: "73%" } },
+            { name: "RestFULL", position: { top: "82%", left: "84%" } },
+        ]
+    },
+    experiencePortfolio: {
+        header: {
+            numberOrder: '03',
+            text: "Where I've worked"
+        },
+        arrExp: [
+            {
+            company: "Indra",
+            title: "Software Developer ",
+            date: "November 2020 - October 2021",
+            tasks: [
+                {
+                content: `Write modern, performant, maintainable code for a diverse array of client and internal projects`,
+                },
+                {
+                content: `Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify`,
+                },
+                {
+                content: `Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis`,
+                },
+            ],
+            },
+            {
+            company: "Uncodeit",
+            title: "Software Developer",
+            date: "Augoust 2020 - October 2021",
+            tasks: [
+                {
+                content: `Worked with a team of three designers to build a marketing website and e-commerce platform for blistabloc, an ambitious startup originating from Northeastern`,
+                },
+                {
+                content: `Helped solidify a brand direction for blistabloc that spans both packaging and web`,
+                },
+                {
+                content: `Interfaced with clients on a weekly basis, providing technological expertise`,
+                },
+            ],
+            },
+        ]
+    },
+    projectsPortfolio: {
+        header: {
+            numberOrder: '04',
+            text: "Yeah, I work hard"
+        },
+        arrProjects: [
+            {
+            img: {
+                source:
+                "https://definicion.de/wp-content/uploads/2009/12/paisaje-1.jpg",
+            },
+            description: {
+                type: "Featured Project",
+                title: "Build a Spotify Connected App",
+                info: [
+                "A ",
+                <strong>minimal</strong>,
+                ", dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, ",
+                <a href="#">Atom Package Manager</a>,
+                ", and npm.",
+                ],
+                stack: "React Styled Components, Express, Spotify API, Heroku",
+                github: "https://github.com/bchiang7/halcyon-site",
+                url: "https://halcyon-theme.netlify.com/",
+            },
+            },
+            {
+            img: {
+                source:
+                "https://definicion.de/wp-content/uploads/2009/12/paisaje-1.jpg",
+            },
+            description: {
+                type: "Featured Project",
+                title: "Build a Youtube Connected App",
+                info: [
+                "A ",
+                <strong>minimal</strong>,
+                ", dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, ",
+                <a href="#">Atom Package Manager</a>,
+                ", and npm.",
+                ],
+                stack: "React Styled Components, Express, Spotify API, Heroku",
+                github: "https://github.com/bchiang7/halcyon-site",
+                url: "https://halcyon-theme.netlify.com/",
+            },
+            },
+            {
+            img: {
+                source:
+                "https://definicion.de/wp-content/uploads/2009/12/paisaje-1.jpg",
+            },
+            description: {
+                type: "Featured Project",
+                title: "Build a Insta Connected App",
+                info: [
+                "A ",
+                <strong>minimal</strong>,
+                ", dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, ",
+                <a href="#">Atom Package Manager</a>,
+                ", and npm.",
+                ],
+                stack: "React Styled Components, Express, Spotify API, Heroku",
+                github: "https://github.com/bchiang7/halcyon-site",
+                url: "https://halcyon-theme.netlify.com/",
+            },
+            },
+        ]
+    },
+    contactPortfolio: {
+        header: {
+            numberOrder: '05',
+            text: "What's Next?"
+        },
+        phrase: 'Get In Touch',
+        content: 'Thanks for stopping by, I’m currently looking to join a new team of creative developers. If you think we might be a good fit for one another, give me a call 🇵🇪 send me an email',
+        buttonText: 'Say Hello',
+        signature: "Designed & Built by Renzo Quispe"
+    }
+}}>
+{Template.bind({})}
+</Story>
+
