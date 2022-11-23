@@ -36,16 +36,29 @@ const ExamplePortofolio = ({
           img={homePortfolio.img}
         />
         <AboutPortfolio
+          header={aboutPortfolio.header}
           pathImage={aboutPortfolio.pathImage}
           arrAbout={aboutPortfolio.arrAbout}
           arrThoughts={aboutPortfolio.arrThoughts}
         />
-        <SkillsPortfolio arrTech={skillsPortfolio.arrTech} />
-        <ExperiencePortfolio arrExp={experiencePortfolio.arrExp} />
-        <ProjectsPortfolio arrProjects={projectsPortfolio.arrProjects} />
+        <SkillsPortfolio
+          header={skillsPortfolio.header}
+          arrTech={skillsPortfolio.arrTech}
+        />
+        <ExperiencePortfolio
+          header={experiencePortfolio.header}
+          arrExp={experiencePortfolio.arrExp}
+        />
+        <ProjectsPortfolio
+            header={projectsPortfolio.header}
+            arrProjects={projectsPortfolio.arrProjects}
+        />
         <ContactPortfolio
+          header={contactPortfolio.header}
+          phrase={contactPortfolio.phrase}
           content={contactPortfolio.content}
           buttonText={contactPortfolio.buttonText}
+          signature={contactPortfolio.signature}
         />
       </div>
     </div>

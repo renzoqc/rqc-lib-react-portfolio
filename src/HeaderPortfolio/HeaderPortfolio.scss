@@ -4,12 +4,12 @@
   position: relative !important;
   .HeaderPortfolio {
     align-items: center;
-    
+
     @include media-breakpoint-down(sm) {
       padding: 0 1rem 0 2.5rem;
-      .navigation-menu { 
+      .navigation-menu {
         .MenuHeader {
-          display: none;        
+          display: none;
         }
         a {
           cursor: pointer;
@@ -27,12 +27,15 @@
         }
       }
     }
-    
+
     @include media-breakpoint-up(sm) {
       padding: 0 2.5rem 0 2.5rem;
       .navigation-menu {
         .MenuHeader {
           display: block;
+        }
+        .icon-side-bar {
+          display: none;
         }
       }
     }

@@ -5,12 +5,13 @@ import Image from "../Image/Image";
 import { useEffect, useState } from "react";
 
 const AboutPortfolio = ({
+  header,
   pathImage,
   arrAbout,
   arrThoughts,
 }: AboutPortfolioProps) => {
-  const CircleGreen = () => (
-    <svg height="20" width="20" className={"circle"}>
+  const CircleGreen = ({ listKey }: { listKey: number}) => (
+    <svg height="20" width="20" className={"circle"} key={listKey}>
       <circle cx="10" cy="10" r="6" strokeWidth="1.5" />
     </svg>
   );
@@ -38,20 +39,18 @@ const AboutPortfolio = ({
       <Row className={"About RQ-d-flex"} noGutter flex>
         <Col olg={10} ulg={18} className={"content"}>
           <div className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-f-26"}>
-            <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>01.</p>
-            <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>
-              About Me
-            </p>
+            <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>{`${header.numberOrder}.`}</p>
+            <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>{header.text}</p>
             <hr className={"line"} />
           </div>
           <div className={"circle-section"}>
             <p className={"RQ-f-12 RQ-mb-4 RQ-ml-4 RQ-description"}>
               ADJUST BIO LENGTH:
             </p>
-            {arrCircle.map((i) => (
+            {arrCircle.map((i, index) => (
               <a
                 style={{ cursor: "pointer" }}
-                key={i}
+                key={index}
                 className={`${
                   arrCircle.length - 1 === i || i === 0
                     ? (i === 0 ? "RQ-mr-4" : "") ||
@@ -60,7 +59,7 @@ const AboutPortfolio = ({
                 } ${i === sizeAbout ? "active" : ""} `}
                 onClick={() => updateAbout(i)}
               >
-                <CircleGreen />
+                <CircleGreen listKey={index} />
               </a>
             ))}
             <div className={"RQ-description"}>
@@ -82,7 +81,7 @@ const AboutPortfolio = ({
       </Row>
       <Row className={"thoughts RQ-d-flex RQ-justify-center RQ-mx-5"} noGutter flex>
         {arrThoughts.map((item, index) => (
-          <Col umd={18} omd={6}>
+          <Col umd={18} omd={6} key={index}>
             <div
               className={`container RQ-description ${
                 index === 0 ? "RQ-ml-4" : "RQ-ml-4"

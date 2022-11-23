@@ -129,6 +129,10 @@
           object-fit: cover;
           &:hover {
             filter: blur(0) saturate(1) brightness(111%);
+            transition: 0.5s;
+          }
+          &:not(:hover) {
+            transition: 0.5s;
           }
         }
       }

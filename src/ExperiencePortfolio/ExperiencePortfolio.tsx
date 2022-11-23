@@ -6,7 +6,7 @@ import {
 import { Col, Row } from "../Grid/Grid";
 import { useState } from "react";
 
-const ExperiencePortfolio = ({ arrExp }: ExperiencePortfolioProps) => {
+const ExperiencePortfolio = ({ header, arrExp }: ExperiencePortfolioProps) => {
   const [exp, setExp] = useState<ExperienceList>(arrExp[0]);
 
   const [expIndex, setExpIndex] = useState<number>(0);
@@ -27,10 +27,8 @@ const ExperiencePortfolio = ({ arrExp }: ExperiencePortfolioProps) => {
       id={"ExperiencePortfolio"}
     >
       <div className={"header RQ-d-flex RQ-align-center RQ-f-26"}>
-        <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>03.</p>
-        <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>
-          Where I've worked
-        </p>
+        <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>{`${header.numberOrder}.`}</p>
+        <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>{header.text}</p>
         <hr className={"line"} />
       </div>
       <div className="custom-select">
@@ -46,7 +44,7 @@ const ExperiencePortfolio = ({ arrExp }: ExperiencePortfolioProps) => {
       <Row className={"content-exp"} noGutter>
         <Col xs={0} other={5} className="company">
           {arrExp.map((item, index) => (
-            <a onClick={() => updateStateExp(index)}>
+            <a onClick={() => updateStateExp(index)} key={index}>
               <div
                 className={`RQ-d-flex RQ-align-center left-side RQ-f-code ${
                   index === expIndex ? "active" : ""

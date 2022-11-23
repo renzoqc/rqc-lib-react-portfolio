@@ -2,6 +2,10 @@ export interface ExperiencePortfolioProps {
   /**
    * Defines ...
    */
+  header: {
+    numberOrder: string;
+    text: string;
+  };
   arrExp: ExperienceList[];
 }
 

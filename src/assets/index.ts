@@ -1,7 +1,7 @@
-import html5 from "./icons/html5.svg";
-import javascript from "./icons/javascript.svg";
-import nodejs from "./icons/nodejs.svg";
-import reactjs from "./icons/reactjs.svg";
+import html5 from "./icons/tech/html5.svg";
+import javascript from "./icons/tech/javascript.svg";
+import nodejs from "./icons/tech/nodejs.svg";
+import reactjs from "./icons/tech/reactjs.svg";
 
 const assets = {
   img: {

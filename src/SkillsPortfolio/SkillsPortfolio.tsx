@@ -1,7 +1,7 @@
 import "./SkillsPortfolio.scss";
 import { SkillsPortfolioProps } from "./SkillsPortfolio.types";
 
-const SkillsPortfolio = ({ arrTech }: SkillsPortfolioProps) => {
+const SkillsPortfolio = ({ header, arrTech }: SkillsPortfolioProps) => {
   return (
     <div
       data-testid="SkillsPortfolio"
@@ -9,18 +9,16 @@ const SkillsPortfolio = ({ arrTech }: SkillsPortfolioProps) => {
       id={"SkillsPortfolio"}
     >
       <div className={"RQ-d-flex RQ-align-center RQ-mb-4 RQ-f-26"}>
-        <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>02.</p>
-        <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>
-          Skillsets
-        </p>
+        <p className={"RQ-theme RQ-mr-2 RQ-f-code"}>{`${header.numberOrder}.`}</p>
+        <p className={"RQ-name RQ-f-helvetica RQ-f-semi-bold RQ-one-line"}>{header.text}</p>
         <hr className={"line"} />
       </div>
 
       <div className="main-skills RQ-justify-center">
         <div className="parallax-inner">
           <div className={"back"}>
-            {arrTech.map((tech) => (
-              <p style={tech.position}>{tech.name}</p>
+            {arrTech.map((tech, index) => (
+              <p style={tech.position} key={index}>{tech.name}</p>
             ))}
           </div>
         </div>
@@ -62,11 +60,11 @@ const SkillsPortfolio = ({ arrTech }: SkillsPortfolioProps) => {
               xmlns="http://www.w3.org/2000/svg"
               style={{ width: "inherit", height: "inherit" }}
             >
-              <g fill="none" fill-rule="evenodd">
+              <g fill="none" fillRule="evenodd">
                 <rect width="24" height="24" fill="#F1DC50" />
                 <path
                   stroke="#333"
-                  stroke-width="2"
+                  strokeWidth="2"
                   d="M12,11 C12,15.749205 12,18.4158717 12,19 C12,19.8761925 11.4771235,21 10,21 C7.61461794,21 7.5,19 7.5,19 M20.7899648,13.51604 C20.1898831,12.5053467 19.3944074,12 18.4035378,12 C16.8563489,12 16,13 16,14 C16,15 16.5,16 18.5084196,16.5 C19.7864643,16.8181718 21,17.5 21,19 C21,20.5 19.6845401,21 18.5,21 C16.9861609,21 15.9861609,20.3333333 15.5,19"
                 />
               </g>
