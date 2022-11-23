@@ -1,4 +1,4 @@
-import './TestComponent.scss';
+// import './TestComponent.scss';
 import { TestComponentProps } from './TestComponent.types';
 
 const TestComponent = ({theme='primary'}:TestComponentProps)=>{
