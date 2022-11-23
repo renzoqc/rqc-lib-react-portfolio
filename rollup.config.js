@@ -8,7 +8,7 @@ import copy from "rollup-plugin-copy";
 import json from "@rollup/plugin-json";
 import { visualizer } from "rollup-plugin-visualizer";
 import fs from "fs";
-import { uglify } from "rollup-plugin-uglify";
+import { terser } from 'rollup-plugin-terser';
 import svgr from "@svgr/rollup";
 
 const arrayIndex = [];
@@ -85,7 +85,7 @@ export default {
       flatten: false,
     }),
     svgr(),
-    uglify(),
+    terser(),
     visualizer(),
   ],
   external: ["react", "react-dom"],
