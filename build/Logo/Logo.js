@@ -1,0 +1,2 @@
+"use strict";var e=require("../node_modules/tslib/tslib.es6.js"),s=require("react/jsx-runtime");module.exports=function(t){var a=t.pathImage,i=t.altImage,r=t.withText;return s.jsxs("div",e.__assign({"data-testid":"Logo",className:"Logo RQ-d-flex"},{children:[s.jsx("img",{src:require("../assets/".concat(a)),alt:i}),s.jsx("div",e.__assign({className:"RQ-ml-2 RQ-f-20 ".concat(r?"RQ-d-block":"RQ-d-none")},{children:"Portfolio"}))]}))};
+//# sourceMappingURL=Logo.js.map
