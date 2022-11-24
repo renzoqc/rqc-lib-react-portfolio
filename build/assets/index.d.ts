@@ -1,6 +1,5 @@
 /// <reference types="react" />
 declare const assets: {
-    img: {};
     test: {
         sample: string;
     };

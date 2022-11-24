@@ -4,9 +4,6 @@ import nodejs from "./icons/tech/nodejs.svg";
 import reactjs from "./icons/tech/reactjs.svg";
 
 const assets = {
-  img: {
-    // charmander: Charmander
-  },
   test: {
     sample: "TestSample",
   },
