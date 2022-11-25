@@ -67,7 +67,7 @@ const AboutPortfolio = ({
               <div className={"right"}>longest</div>
             </div>
           </div>
-          <p className={"RQ-name RQ-f-18 RQ-description-content"}>{about}</p>
+          <div className={"RQ-name RQ-f-18 RQ-description-content"}  dangerouslySetInnerHTML={{ __html: about }}/>
         </Col>
         <Col olg={8} ulg={18}>
           <Image

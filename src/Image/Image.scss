@@ -10,8 +10,8 @@
 
 
     @include media-breakpoint-up(md) {
-      width: 350px;
-      height: 400px;
+      width: 310px;
+      height: 390px;
       transform: translate(20px, 20px);
     }
 
@@ -33,8 +33,8 @@
     }
 
     @include media-breakpoint-up(md) {
-      width: 350px;
-      height: 400px;
+      width: 310px;
+      height: 390px;
       &:hover ~ .image-border {
         transform: translate(15px, 15px);
       }
