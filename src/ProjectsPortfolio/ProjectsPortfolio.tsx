@@ -13,6 +13,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
     content: {
       img: {
         source: string;
+        external: boolean;
       };
       description: {
         type: string;
@@ -33,7 +34,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
         >
           <Row className={"RQ-d-flex project-content"} noGutter>
             <Col xs={18} other={11} className={"project-img"}>
-              <img src={props.content.img.source} alt={"ProjectImg"} />
+              <img src={props.content.img.external ? props.content.img.source : require(props.content.img.source)} alt={"ProjectImg"} />
             </Col>
             <Col xs={18} other={7} className={"project-desc"}>
               <p className={"RQ-theme RQ-f-14 RQ-text-right"}>
@@ -116,6 +117,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
     content: {
       img: {
         source: string;
+        external: boolean;
       };
       description: {
         type: string;
@@ -204,7 +206,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
               </div>
             </Col>
             <Col xs={18} other={11} className={"project-img"}>
-              <img src={props.content.img.source} alt={"ProjectImg"} />
+              <img src={props.content.img.external ? props.content.img.source : require(props.content.img.source)} alt={"ProjectImg"} />
             </Col>
           </Row>
         </div>
@@ -215,6 +217,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
     content: {
       img: {
         source: string;
+        external: boolean;
       };
       description: {
         type: string;

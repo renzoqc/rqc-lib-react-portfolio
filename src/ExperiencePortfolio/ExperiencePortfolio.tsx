@@ -58,9 +58,10 @@ const ExperiencePortfolio = ({ header, arrExp }: ExperiencePortfolioProps) => {
         <Col xs={18} other={13} className="content">
           <div className="header RQ-d-flex RQ-align-center">
             <h3 className="RQ-m-0 RQ-name RQ-f-18">{exp.title}&nbsp;</h3>
-            <a href="#" className="RQ-f-bold RQ-f-18">
+            <a href={exp.goTo} className="RQ-f-bold RQ-f-18" target="_blank">
               @{exp.company}
             </a>
+            <p className="exp-country">&nbsp; {exp.country}</p>
           </div>
           <p className="RQ-f-14 RQ-description">{exp.date}</p>
           <ul>

@@ -149,37 +149,101 @@ export const Template = (args) => {
         },
         arrExp: [
             {
-            company: "Indra",
-            title: "Software Developer ",
-            date: "November 2020 - October 2021",
-            tasks: [
-                {
-                content: `Write modern, performant, maintainable code for a diverse array of client and internal projects`,
-                },
-                {
-                content: `Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify`,
-                },
-                {
-                content: `Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis`,
-                },
-            ],
+                company: "Apply Digital",
+                title: "Back-end Developer",
+                country: "🇨🇱",
+                date: "September 2022 - Current",
+                goTo: "https://www.applydigital.com/",
+                tasks: [
+                    {
+                        content: "Backend software development through API for an e-commerce service primarily using Django, Jest, TypeScript, Redis, NestJS, ExpressJs, NodeJs, Docker.",
+                    },
+                    {
+                        content: "Development of unit tests and clean code.",
+                    },
+                    {
+                        content: "Development of backend solutions for frontend services availability."
+                    },
+                    {
+                        content: "Integrations with payment gateway services."
+                    }
+                ],
             },
             {
-            company: "Uncodeit",
-            title: "Software Developer",
-            date: "Augoust 2020 - October 2021",
-            tasks: [
-                {
-                content: `Worked with a team of three designers to build a marketing website and e-commerce platform for blistabloc, an ambitious startup originating from Northeastern`,
-                },
-                {
-                content: `Helped solidify a brand direction for blistabloc that spans both packaging and web`,
-                },
-                {
-                content: `Interfaced with clients on a weekly basis, providing technological expertise`,
-                },
-            ],
+                company: "Autofact",
+                title: "Full Stack Developer",
+                country: "🇨🇱",
+                date: "February 2022 - October 2022",
+                goTo: "https://www.autofact.cl/",
+                tasks: [
+                    {
+                        content: "Development of Full Stack web applications for the promotion of new services primarily using Sass, Jest, NextJs, ExpressJs, ReactJs, NodeJs, Docker, AWS Lambda, Laravel.",
+                    },
+                    {
+                        content: "Development and maintenance of content management applications in the Retail service.",
+                    },
+                    {
+                        content: "Integrations with traffic management systems such as Google Tag Manager, Google Analytics."
+                    },
+                ],
             },
+            {
+                company: "Reign",
+                title: "Back-end Developer",
+                country: "🇨🇱",
+                date: "February 2022 - September 2022",
+                goTo: "https://www.linkedin.com/company/reigncl/",
+                tasks: [
+                    {
+                        content: "Backend software development through API for an e-commerce service primarily using Django, Jest, TypeScript, Redis, NestJS, ExpressJs, NodeJs, Docker.",
+                    },
+                    {
+                        content: "Development of unit tests and clean code.",
+                    },
+                    {
+                        content: "Development of backend solutions for frontend services availability."
+                    },
+                    {
+                        content: "Integrations with payment gateway services."
+                    },
+                ],
+            },
+            {
+                company: "Uncodeit",
+                title: "Full-Stack Software Developer",
+                country: "🇵🇪",
+                date: "August 2021 - February 2022",
+                goTo: "https://www.linkedin.com/company/uncodeit-consulting/",
+                tasks: [
+                    {
+                        content: "Group information of the status of the telecommunications network, associating the necessary parameters of each equipment in MongoDB documents."
+                    },
+                    {
+                        content: "Generate reports of the current status of the network through remote connections to equipment such as routers, switches, network managers."
+                    },
+                    {
+                        content: "Creation of a reporting platform, with statistical graphs, processes in progress and equipment failures primarily using MongoDB, GitLab, Sass, NestJs, ExpressJs, ReactJs, NodeJs, Docker."
+                    },
+                ],
+            },
+            {
+                company: "Indra",
+                title: "Young professional",
+                country: "🇵🇪",
+                date: "November 2020 - October 2021",
+                goTo: "https://www.indracompany.com/",
+                tasks: [
+                    {
+                        content: "Development of platforms for the internal control of the entry of materials to the project primarily using Bootstrap, PostgreSQL, ExpressJs, NodeJs, Python."
+                    },
+                    {
+                        content: "Generation of reports on current logistics and comparative tables."
+                    },
+                    {
+                        content: "Generation of dashboards for project service estimation."
+                    },
+                ],
+            }
         ]
     },
     projectsPortfolio: {
@@ -191,7 +255,8 @@ export const Template = (args) => {
             {
             img: {
                 source:
-                "https://definicion.de/wp-content/uploads/2009/12/paisaje-1.jpg",
+                "../assets/img/bartolito.png",
+                external: false,
             },
             description: {
                 type: "Featured Project",
@@ -212,6 +277,7 @@ export const Template = (args) => {
             img: {
                 source:
                 "https://definicion.de/wp-content/uploads/2009/12/paisaje-1.jpg",
+                external: true,
             },
             description: {
                 type: "Featured Project",
@@ -232,6 +298,7 @@ export const Template = (args) => {
             img: {
                 source:
                 "https://definicion.de/wp-content/uploads/2009/12/paisaje-1.jpg",
+                external: true,
             },
             description: {
                 type: "Featured Project",

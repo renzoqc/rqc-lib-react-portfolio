@@ -13,5 +13,7 @@ export interface ExperienceList {
   company: string;
   title: string;
   date: string;
+  country: string;
+  goTo: string;
   tasks: { content: string }[];
 }

@@ -66,6 +66,9 @@
       border: 1px solid $theme-pf;
       width: 100%;
     }
+    .exp-country {
+      font-size: 20px;
+    }
   }
 
   .company {
@@ -107,6 +110,9 @@
       //list-style-image: initial;
       list-style: none;
       color: $theme-description-pf;
+      @include media-breakpoint-up(sm) {
+        font-size: 18px;
+      }
       li {
         position: relative;
         padding-left: 30px;
