@@ -7,7 +7,9 @@ export interface ContactProps {
     text: string;
   };
   phrase: string;
-  content: string;
+  content1: string;
+  content2: string;
+  buttonGoTo: string;
   buttonText: string;
   signature: string;
 }

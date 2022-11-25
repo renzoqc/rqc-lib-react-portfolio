@@ -34,13 +34,13 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
         >
           <Row className={"RQ-d-flex project-content"} noGutter>
             <Col xs={18} other={11} className={"project-img"}>
-              <img src={props.content.img.external ? props.content.img.source : require(props.content.img.source)} alt={"ProjectImg"} />
+              <img src={require(`../assets/${props.content.img.source}`)} />
             </Col>
             <Col xs={18} other={7} className={"project-desc"}>
               <p className={"RQ-theme RQ-f-14 RQ-text-right"}>
                 {props.content.description.type}
               </p>
-              <h1 className={"RQ-f-28 RQ-text-right RQ-white RQ-hover-theme"}>
+              <h1 className={"RQ-f-28 RQ-text-right RQ-white RQ-hover-theme RQ-ml-5"}>
                 {props.content.description.title}
               </h1>
               <div className="project-summary">
@@ -137,7 +137,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
               <p className={"RQ-theme RQ-f-14 RQ-text-left"}>
                 {props.content.description.type}
               </p>
-              <h1 className={"RQ-f-28 RQ-text-left RQ-white RQ-hover-theme"}>
+              <h1 className={"RQ-f-28 RQ-text-left RQ-white RQ-hover-theme RQ-mr-5"}>
                 {props.content.description.title}
               </h1>
               <div className="project-summary">
@@ -206,7 +206,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
               </div>
             </Col>
             <Col xs={18} other={11} className={"project-img"}>
-              <img src={props.content.img.external ? props.content.img.source : require(props.content.img.source)} alt={"ProjectImg"} />
+              <img src={require(`../assets/${props.content.img.source}`)} />
             </Col>
           </Row>
         </div>

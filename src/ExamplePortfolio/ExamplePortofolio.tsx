@@ -56,8 +56,10 @@ const ExamplePortofolio = ({
         <ContactPortfolio
           header={contactPortfolio.header}
           phrase={contactPortfolio.phrase}
-          content={contactPortfolio.content}
+          content1={contactPortfolio.content1}
+          content2={contactPortfolio.content2}
           buttonText={contactPortfolio.buttonText}
+          buttonGoTo={contactPortfolio.buttonGoTo}
           signature={contactPortfolio.signature}
         />
       </div>
