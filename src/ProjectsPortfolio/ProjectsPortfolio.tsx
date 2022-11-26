@@ -17,7 +17,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
       description: {
         type: string;
         title: string;
-        info: any[];
+        info: string;
         stack: string;
         github: string;
         url: string;
@@ -43,11 +43,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
                 {props.content.description.title}
               </h1>
               <div className="project-summary">
-                <p className={"RQ-f-17 RQ-white RQ-text-center"}>
-                  {props.content.description.info.map((item, index) => (
-                      <Fragment key={index}>{item}</Fragment>
-                  ))}
-                </p>
+                <p className={"RQ-f-17 RQ-white RQ-text-center"} dangerouslySetInnerHTML={{ __html: props.content.description.info }} />
               </div>
               <div className={'list-stack-card'}>
                 <ul>
@@ -120,7 +116,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
       description: {
         type: string;
         title: string;
-        info: any[];
+        info: string;
         stack: string;
         github: string;
         url: string;
@@ -139,11 +135,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
                 {props.content.description.title}
               </h1>
               <div className="project-summary">
-                <p className={"RQ-f-17 RQ-white RQ-text-center"}>
-                  {props.content.description.info.map((item, index) => (
-                      <Fragment key={index}>{item}</Fragment>
-                  ))}
-                </p>
+                <p className={"RQ-f-17 RQ-white RQ-text-center"} dangerouslySetInnerHTML={{ __html: props.content.description.info }} />
               </div>
               <div className={'list-stack-card'}>
                 <ul>
@@ -219,7 +211,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
       description: {
         type: string;
         title: string;
-        info: any[];
+        info: string;
         stack: string;
         github: string;
         url: string;
@@ -238,11 +230,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
             {props.content.description.title}
           </h1>
           <div className="project-summary">
-            <p className={"RQ-f-18 RQ-white"}>
-              {props.content.description.info.map((item, index) => (
-                  <Fragment key={index}>{item}</Fragment>
-              ))}
-            </p>
+            <p className={"RQ-f-18 RQ-white"} dangerouslySetInnerHTML={{ __html: props.content.description.info }} />
           </div>
           <p className={"RQ-my-4 RQ-text-left RQ-description"}>
             {props.content.description.stack}
