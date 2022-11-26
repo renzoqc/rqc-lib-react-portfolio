@@ -13,7 +13,7 @@ export interface ProjectsPortfolioProps {
         description: {
             type: string;
             title: string;
-            info: any[];
+            info: string;
             stack: string;
             github: string;
             url: string;
