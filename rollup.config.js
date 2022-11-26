@@ -79,7 +79,7 @@ export default {
     copy({
       targets: [
         { src: "src/assets/scss", dest: "build/" },
-        { src: ["src/assets/img/**/*.svg", "!**/*.tsx"], dest: "build/" },
+        { src: ["src/assets/icons/**/*.svg", "!**/*.tsx"], dest: "build/" },
         { src: ["src/assets/icons/*.svg"], dest: "build/" },
       ],
       flatten: false,
