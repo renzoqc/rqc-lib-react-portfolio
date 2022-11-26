@@ -9,6 +9,7 @@ export interface ProjectsPortfolioProps {
     arrProjects: {
         img: {
             source: string;
+            external: boolean;
         };
         description: {
             type: string;
