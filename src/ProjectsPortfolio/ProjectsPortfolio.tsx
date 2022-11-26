@@ -13,7 +13,6 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
     content: {
       img: {
         source: string;
-        external: boolean;
       };
       description: {
         type: string;
@@ -117,7 +116,6 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
     content: {
       img: {
         source: string;
-        external: boolean;
       };
       description: {
         type: string;
@@ -217,7 +215,6 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
     content: {
       img: {
         source: string;
-        external: boolean;
       };
       description: {
         type: string;
