@@ -1,2 +1,0 @@
-"use strict";var e=require("../node_modules/tslib/tslib.es6.js"),t=require("react/jsx-runtime");module.exports=function(s){var n=s.theme,i=void 0===n?"primary":n;return t.jsxs("div",e.__assign({"data-testid":"test-component",className:"test-component test-component-".concat(i)},{children:[t.jsx("h1",e.__assign({className:"heading"},{children:"I'm the test component"})),t.jsx("h2",{children:"Made with love by Renzo"})]}))};
-//# sourceMappingURL=TestComponent.js.map

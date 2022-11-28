@@ -1,2 +1,0 @@
-"use strict";var e=require("../node_modules/tslib/tslib.es6.js"),a=require("react/jsx-runtime");module.exports=function(s){var t=s.classImg,r=s.pathImage,c=s.altImage,i=s.border,m=s.fade;return a.jsxs("div",e.__assign({"data-testid":"Image",className:"Image RQ-d-flex RQ-justify-center"},{children:[a.jsx("img",{className:"".concat(m?"image-fade":""," ").concat(t),src:require("../assets/".concat(r)),alt:c}),a.jsx("div",{className:"".concat(i?"image-border":"")})]}))};
-//# sourceMappingURL=Image.js.map
