@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "start": "start-storybook",
+    "start": "start-storybook -p 3010",
     "build:storybook": "build-storybook",
     "test:cov": "jest --coverage",
     "test": "jest",
