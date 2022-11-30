@@ -24,7 +24,7 @@ const MenuHeader = ({
                         </li>
                     ) }
                     <a
-                        href={require('../assets/files/resume.pdf')}
+                        href={resume.goTo}
                         target="_blank"
                         className={`resume RQ-border-${resume.color} RQ-${resume.color}`}
                     >{ resume.name }</a>

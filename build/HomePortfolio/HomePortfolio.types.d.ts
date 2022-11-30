@@ -8,6 +8,7 @@ export interface HomePortfolioProps {
     content: string;
     resume: {
         text: string;
+        goTo: string;
     };
     img: {
         path: string;
