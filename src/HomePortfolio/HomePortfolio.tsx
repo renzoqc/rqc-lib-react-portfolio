@@ -38,7 +38,8 @@ const HomePortfolio = ({
         </Col>
         <Col xs={18} other={18} className={"RQ-mt-4 download"}>
           <a
-            href={"#"}
+            href={require('../assets/files/resume.pdf')}
+            target="_blank"
             className={
               "RQ-f-18 RQ-theme RQ-border-cyan-pf RQ-d-flex RQ-justify-center RQ-f-code"
             }

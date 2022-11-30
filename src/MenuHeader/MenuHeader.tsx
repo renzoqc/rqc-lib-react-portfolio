@@ -23,7 +23,11 @@ const MenuHeader = ({
                             </a>
                         </li>
                     ) }
-                    <a href={resume.goTo} className={`resume RQ-border-${resume.color} RQ-${resume.color}`}>{ resume.name }</a>
+                    <a
+                        href={require('../assets/files/resume.pdf')}
+                        target="_blank"
+                        className={`resume RQ-border-${resume.color} RQ-${resume.color}`}
+                    >{ resume.name }</a>
                 </ul>
         </Row>
     );
