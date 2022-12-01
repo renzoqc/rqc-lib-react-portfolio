@@ -6,7 +6,7 @@
     align-items: center;
 
     @include media-breakpoint-down(sm) {
-      padding: 0 1rem 0 2.5rem;
+      padding: 0 1rem 0 1rem;
       .navigation-menu {
         .MenuHeader {
           display: none;

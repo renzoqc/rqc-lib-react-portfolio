@@ -18,6 +18,7 @@ const HeaderPortfolio = ({ logo, menuHeader }: HeaderPortfolioProps) => {
       <Row
         data-testid="HeaderPortfolio"
         className={"HeaderPortfolio RQ-d-flex"}
+        noGutter
       >
         <Col xs={18} other={5} className="">
           <Logo
