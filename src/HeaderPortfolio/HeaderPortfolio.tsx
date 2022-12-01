@@ -98,6 +98,7 @@ const HeaderPortfolio = ({ logo, menuHeader }: HeaderPortfolioProps) => {
         <div className="sideBar-download RQ-d-flex RQ-justify-center RQ-align-center">
           <a
             href={menuHeader.resume.goTo}
+            target="_blank"
             className={
               "RQ-f-18 RQ-theme RQ-border-cyan-pf RQ-d-flex RQ-justify-center RQ-f-code"
             }
