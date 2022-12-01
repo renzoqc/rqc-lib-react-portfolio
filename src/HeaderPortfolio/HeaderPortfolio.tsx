@@ -84,7 +84,11 @@ const HeaderPortfolio = ({ logo, menuHeader }: HeaderPortfolioProps) => {
         <ul className="RQ-f-code">
           {menuHeader.menu.data.map((item, i) => (
             <li key={i} className="RQ-d-flex RQ-justify-center RQ-align-center">
-              <a href={item.goTo} className={"RQ-white"}>
+              <a
+                  href={item.goTo}
+                  className={"RQ-white"}
+                  onClick={() => changeStateSideBar()}
+              >
                 {item.name}
               </a>
             </li>
@@ -92,7 +96,7 @@ const HeaderPortfolio = ({ logo, menuHeader }: HeaderPortfolioProps) => {
         </ul>
         <div className="sideBar-download RQ-d-flex RQ-justify-center RQ-align-center">
           <a
-            href={"#"}
+            href={menuHeader.resume.goTo}
             className={
               "RQ-f-18 RQ-theme RQ-border-cyan-pf RQ-d-flex RQ-justify-center RQ-f-code"
             }

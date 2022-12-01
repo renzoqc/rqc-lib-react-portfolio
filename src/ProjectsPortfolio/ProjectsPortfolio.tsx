@@ -288,7 +288,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
   }
 
   return (
-    <div data-testid="ProjectsPortfolio" className={"ProjectsPortfolio"}>
+    <div data-testid="ProjectsPortfolio" className={"ProjectsPortfolio"} id="ProjectsPortfolio">
       <div
         className={"RQ-d-flex RQ-align-center projects-header RQ-f-26"}
       >
