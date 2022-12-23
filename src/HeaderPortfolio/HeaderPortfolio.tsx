@@ -21,11 +21,12 @@ const HeaderPortfolio = ({ logo, menuHeader }: HeaderPortfolioProps) => {
         noGutter
       >
         <Col xs={18} other={5} className="">
-          {/*<Logo*/}
-          {/*  pathImage={logo.pathImage}*/}
-          {/*  altImage={logo.altImage}*/}
-          {/*  withText={logo.withText}*/}
-          {/*/>*/}
+          <Logo
+            pathImage={'https://renzoqc.dev/files/logo-pf.svg'}
+            altImage={logo.altImage}
+            withText={logo.withText}
+          />
+          {/*<img src={'https://renzoqc.dev/files/logo-pf.svg'} alt={`${logo.altImage}`} />*/}
         </Col>
         <Col xs={18} other={13} className="navigation-menu">
           <MenuHeader

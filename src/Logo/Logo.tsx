@@ -6,7 +6,7 @@ import { Col, Row } from "../Grid/Grid";
 const Logo = ({ pathImage, altImage, withText }: LogoProps) => {
   return (
     <div data-testid="Logo" className={"Logo RQ-d-flex"}>
-      <img src={require(`../assets/${pathImage}`)} alt={altImage} />
+      <img src={pathImage} alt={altImage} />
       <div
         className={`RQ-ml-2 RQ-f-20 ${withText ? "RQ-d-block" : "RQ-d-none"}`}
       >
