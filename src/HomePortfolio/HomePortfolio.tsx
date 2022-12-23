@@ -73,7 +73,7 @@ const HomePortfolio = ({
         other={5}
         className="RQ-d-flex RQ-justify-center img-about"
       >
-        <img src={require(`../assets/${img.path}`)} alt={`${img.alt}`} />
+        {/*<img src={require(`../assets/${img.path}`)} alt={`${img.alt}`} />*/}
       </Col>
     </Row>
   );
