@@ -17,7 +17,7 @@ const Image = ({
             className={'Image RQ-d-flex RQ-justify-center'}
         >
             <img className={`${fade ? 'image-fade' : ''} ${classImg}`}
-                 src={require(`../assets/${pathImage}`)}
+                 src={pathImage}
                  alt={altImage}
             />
             <div className={`${border ? 'image-border' : ''}`}>

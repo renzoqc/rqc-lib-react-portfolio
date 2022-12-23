@@ -33,7 +33,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
         >
           <Row className={"RQ-d-flex project-content"} noGutter>
             <Col xs={18} other={11} className={"project-img"}>
-              <img src={require(`../assets/${props.content.img.source}`)} />
+              <img src={props.content.img.source} />
             </Col>
             <Col xs={18} other={7} className={"project-desc"}>
               <p className={"RQ-theme RQ-f-14 RQ-text-right"}>
@@ -196,7 +196,7 @@ const ProjectsPortfolio = ({ header, arrProjects }: ProjectsPortfolioProps) => {
               </div>
             </Col>
             <Col xs={18} other={11} className={"project-img"}>
-              <img src={require(`../assets/${props.content.img.source}`)} />
+              <img src={props.content.img.source} />
             </Col>
           </Row>
         </div>
