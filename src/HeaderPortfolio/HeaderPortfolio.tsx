@@ -22,7 +22,7 @@ const HeaderPortfolio = ({ logo, menuHeader }: HeaderPortfolioProps) => {
       >
         <Col xs={18} other={5} className="">
           <Logo
-            pathImage={'https://renzoqc.dev/files/logo-pf.svg'}
+            pathImage={logo.pathImage}
             altImage={logo.altImage}
             withText={logo.withText}
           />

@@ -73,7 +73,7 @@ const HomePortfolio = ({
         other={5}
         className="RQ-d-flex RQ-justify-center img-about"
       >
-        <img src={'https://renzoqc.dev/files/memoji-mac.png'} alt={`${img.alt}`} />
+        <img src={img.path} alt={`${img.alt}`} />
       </Col>
     </Row>
   );
