@@ -89,7 +89,7 @@ const AboutPortfolio = ({
               }`}
             >
               <p className={"RQ-f-14"}>"{item}"</p><br/>
-              <p className={"signature RQ-f-13"}>`- ${author}`</p>
+              <p className={"signature RQ-f-13"}>{`- ${author}`}</p>
             </div>
           </Col>
         ))}
