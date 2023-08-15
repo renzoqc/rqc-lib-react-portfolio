@@ -9,4 +9,5 @@ export interface AboutPortfolioProps {
   pathImage: string;
   arrAbout: string[];
   arrThoughts: string[];
+  author?: string;
 }

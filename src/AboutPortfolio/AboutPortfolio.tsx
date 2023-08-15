@@ -9,6 +9,7 @@ const AboutPortfolio = ({
   pathImage,
   arrAbout,
   arrThoughts,
+  author = "Renzo Quispe",
 }: AboutPortfolioProps) => {
   const CircleGreen = ({ listKey }: { listKey: number}) => (
     <svg height="20" width="20" className={"circle"} key={listKey}>
@@ -88,7 +89,7 @@ const AboutPortfolio = ({
               }`}
             >
               <p className={"RQ-f-14"}>"{item}"</p><br/>
-              <p className={"signature RQ-f-13"}>- Renzo Quispe</p>
+              <p className={"signature RQ-f-13"}>`- ${author}`</p>
             </div>
           </Col>
         ))}
