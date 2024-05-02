@@ -1,7 +1,7 @@
 {
-  "name": "report-view-lib-ts-report-boxes",
+  "name": "rqc-lib-react-portfolio",
   "version": "0.1.0",
-  "description": "React Component Library that renders different kinds of report boxes",
+  "description": "React Component Library that renders different kinds of portfolios sections.",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "files": [
