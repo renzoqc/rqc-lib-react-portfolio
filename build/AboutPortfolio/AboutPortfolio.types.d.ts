@@ -1,12 +1,15 @@
 export interface AboutPortfolioProps {
-    /**
-     * Defines ...
-     */
+    className?: string;
     header: {
         numberOrder: string;
         text: string;
     };
-    pathImage: string;
+    image: {
+        path: string;
+        width: number;
+        height: number;
+        desktopMultiplier: number;
+    };
     arrAbout: string[];
     arrThoughts: string[];
 }

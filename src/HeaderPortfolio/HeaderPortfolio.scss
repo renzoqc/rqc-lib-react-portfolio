@@ -1,8 +1,9 @@
 @import '../assets/scss/style.scss';
 
-.main-menu {
+.HeaderPortfolio {
   position: relative !important;
-  .HeaderPortfolio {
+
+  .container {
     align-items: center;
 
     @include media-breakpoint-down(sm) {
@@ -11,17 +12,21 @@
         .MenuHeader {
           display: none;
         }
+
         a {
           cursor: pointer;
           float: right;
+
           svg {
             fill: white;
           }
         }
+
         a:hover svg {
           fill: $theme-pf;
           transition: 0.5s;
         }
+
         a:not(:hover) svg {
           transition: 0.5s;
         }
@@ -34,20 +39,24 @@
         .MenuHeader {
           display: block;
         }
+
         .icon-side-bar {
           display: none;
         }
       }
     }
   }
+
   .side-bar {
     .sideBar-close {
       padding-right: 1rem;
       float: right;
+
       svg {
         fill: $theme-pf;
       }
     }
+
     padding-top: 2rem;
     overflow: hidden;
     z-index: 10;
@@ -59,35 +68,41 @@
     color: white;
     width: 60%;
     box-shadow: -10px 0px 30px -15px #020c1bb3;
+
     .sideBar-download {
       margin-top: 2rem;
+
       a {
         text-decoration: none;
         width: 30%;
         border-radius: 5px;
         padding: 0.5rem 0.6rem;
+
         &:hover {
           background-color: $theme-hover-pf;
           transition: 0.8s;
         }
       }
     }
+
     ul {
       margin-top: 3rem;
       padding-left: 0;
-      // width: 50%;
-      // margin: auto;
+
       > li {
         margin: 1.5rem 0;
         cursor: pointer;
         width: 100%;
         list-style: none;
+
         a {
           text-decoration: none;
+
           &:hover {
             color: $theme-pf;
             transition: 0.5s;
           }
+
           &:not(:hover) {
             transition: 0.5s;
           }

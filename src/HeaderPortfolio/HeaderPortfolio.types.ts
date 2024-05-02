@@ -1,25 +1,24 @@
 export interface HeaderPortfolioProps {
-  /**
-   * Defines ...
-   */
-  logo: {
-    withText: boolean;
-    pathImage: string;
-    altImage: string;
-  };
-  menuHeader: {
-    menu: {
-      colorNumber: string;
-      colorItem: string;
-      data: { name: string; goTo: string }[];
-    };
+    className?: string;
     logo: {
-      path: string;
+        width?: number;
+        withText: boolean;
+        pathImage: string;
+        altImage: string;
     };
-    resume: {
-      name: string;
-      goTo: string;
-      color: string;
+    menuHeader: {
+        menu: {
+            colorNumber: string;
+            colorItem: string;
+            data: { name: string; goTo: string }[];
+        };
+        logo: {
+            path: string;
+        };
+        resume: {
+            name: string;
+            goTo: string;
+            color: string;
+        };
     };
-  };
 }

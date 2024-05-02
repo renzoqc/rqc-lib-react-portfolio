@@ -1,27 +1,30 @@
-
-import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import {ArgsTable, Meta, Story} from '@storybook/addon-docs';
 import HeaderPortfolio from './HeaderPortfolio';
 
-<Meta title="HeaderPortfolio" component={HeaderPortfolio} />
+<Meta title="HeaderPortfolio" component={HeaderPortfolio}/>
 
 # HeaderPortfolio
 
 ## HeaderPortfolio props
-<ArgsTable of={HeaderPortfolio} />
+<ArgsTable of={HeaderPortfolio}/>
 
 ## Description
 
-`HeaderPortfolio` component is the header of portfolio.
+`HeaderPortfolio` component is a section to show all sections and relevent information.
 
 ## Demo
 
 export const Template = (args) => {
-    return <HeaderPortfolio {...args} />
+    return <div style={{padding: '0 1.5em', backgroundColor: '#0B192E'}}>
+        <HeaderPortfolio {...args} />
+    </div>
 }
 
 <Story name="HeaderPortfolio" args={{
+    "className": "HeaderPortfolio",
     "logo": {
-        "pathImage": "https://renzoqc.dev/files/logo-test.png",
+        "width": 65,
+        "pathImage": "https://renzoqc.dev/files/sample/test-logo.jpeg",
         "altImage": "portfolio",
         "withText": false,
     },
@@ -62,6 +65,6 @@ export const Template = (args) => {
         }
     }
 }}>
-{Template.bind({})}
+    {Template.bind({})}
 </Story>
 

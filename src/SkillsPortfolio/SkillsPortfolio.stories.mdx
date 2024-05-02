@@ -1,13 +1,12 @@
-
-import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import {ArgsTable, Meta, Story} from '@storybook/addon-docs';
 import SkillsPortfolio from './SkillsPortfolio';
 
-<Meta title="SkillsPortfolio" component={SkillsPortfolio} />
+<Meta title="SkillsPortfolio" component={SkillsPortfolio}/>
 
 # SkillsPortfolio
 
 ## SkillsPortfolio props
-<ArgsTable of={SkillsPortfolio} />
+<ArgsTable of={SkillsPortfolio}/>
 
 ## Description
 
@@ -16,30 +15,33 @@ import SkillsPortfolio from './SkillsPortfolio';
 ## Demo
 
 export const Template = (args) => {
-    return <SkillsPortfolio {...args} />
+    return <div style={{padding: '0 1.5em', backgroundColor: '#0B192E'}}>
+        <SkillsPortfolio {...args} />
+    </div>
 }
 
 <Story name="SkillsPortfolio" args={{
+    "className": "SkillsPortfolio",
     "header": {
         "numberOrder": "02",
         "text": "Skillsets"
     },
     "arrTech": [
-        { "name": "test", "position": { "top": "10%", "left": "15%" } },
-        { "name": "test", "position": { "top": "4%", "left": "26%" } },
-        { "name": "test", "position": { "top": "30%", "left": "22%" } },
-        { "name": "test", "position": { "top": "25%", "left": "46%" } },
-        { "name": "test", "position": { "top": "10%", "left": "56%" } },
-        { "name": "test", "position": { "top": "38%", "left": "66%" } },
-        { "name": "test", "position": { "top": "12%", "left": "71%" } },
-        { "name": "test", "position": { "top": "28%", "left": "85%" } },
-        { "name": "test", "position": { "top": "90%", "left": "11%" } },
-        { "name": "test", "position": { "top": "95%", "left": "30%" } },
-        { "name": "test", "position": { "top": "85%", "left": "55%" } },
-        { "name": "test", "position": { "top": "94%", "left": "73%" } },
-        { "name": "test", "position": { "top": "82%", "left": "84%" } },
+        {"name": "test", "position": {"top": "10%", "left": "15%"}},
+        {"name": "test", "position": {"top": "4%", "left": "26%"}},
+        {"name": "test", "position": {"top": "30%", "left": "22%"}},
+        {"name": "test", "position": {"top": "25%", "left": "46%"}},
+        {"name": "test", "position": {"top": "10%", "left": "56%"}},
+        {"name": "test", "position": {"top": "38%", "left": "66%"}},
+        {"name": "test", "position": {"top": "12%", "left": "71%"}},
+        {"name": "test", "position": {"top": "28%", "left": "85%"}},
+        {"name": "test", "position": {"top": "90%", "left": "11%"}},
+        {"name": "test", "position": {"top": "95%", "left": "30%"}},
+        {"name": "test", "position": {"top": "85%", "left": "55%"}},
+        {"name": "test", "position": {"top": "94%", "left": "73%"}},
+        {"name": "test", "position": {"top": "82%", "left": "84%"}},
     ]
 }}>
-{Template.bind({})}
+    {Template.bind({})}
 </Story>
 

@@ -1,6 +1,6 @@
 @import '../assets/scss/style.scss';
 
-.Contact {
+.ContactPortfolio {
   @include media-breakpoint-down(sm) {
     padding: 0;
     margin: 5rem 0 0 0;
@@ -11,6 +11,7 @@
       font-size: 30px;
     }
   }
+
   .contact-content {
     @include media-breakpoint-down(sm) {
       width: 90%;
@@ -18,13 +19,17 @@
     text-align: center;
     width: 50%;
   }
+
   padding: 5rem 0 1.3rem 0;
+
   > * {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
+
   align-items: center;
+
   .contact-button {
     @include media-breakpoint-down(sm) {
       margin: 3.5rem auto 7rem auto;
@@ -35,16 +40,19 @@
     padding: 0.6rem 0;
     text-decoration: none;
     text-decoration-color: white;
+
     &:hover {
       background-color: $theme-selection-pf;
       color: $theme-pf;
       transition: 0.3s;
     }
+
     &:not(:hover) {
       transition: 0.5s;
     }
 
   }
+
   .signature {
     @include media-breakpoint-down(sm) {
       font-size: 15px;

@@ -1,12 +1,12 @@
-import { Meta, Canvas, Story, ArgsTable } from "@storybook/addon-docs";
+import {ArgsTable, Meta, Story} from "@storybook/addon-docs";
 import ExamplePortofolio from "./ExamplePortofolio";
 
-<Meta title="ExamplePortofolio" component={ExamplePortofolio} />
+<Meta title="ExamplePortofolio" component={ExamplePortofolio}/>
 
 # ExamplePortofolio
 
 ## ExamplePortofolio props
-<ArgsTable of={ExamplePortofolio} />
+<ArgsTable of={ExamplePortofolio}/>
 
 ## Description
 
@@ -21,7 +21,8 @@ export const Template = (args) => {
 <Story name="ExamplePortofolio" args={{
     "headerPortfolio": {
         "logo": {
-            "pathImage": "https://renzoqc.dev/files/logo-test.png",
+            "width": 65,
+            "pathImage": "https://renzoqc.dev/files/sample/test-logo.jpeg",
             "altImage": "portfolio",
             "withText": false,
         },
@@ -95,10 +96,11 @@ export const Template = (args) => {
         "subtitle": "Lorem Ipsum is simply dummy text.",
         "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..",
         "resume": {
-            "text": "Download Resume"
+            "text": "Download Resume",
+            "goTo": "www.your_domain.com/resume.pdf"
         },
         "img": {
-            "path": "https://renzoqc.dev/files/charmander.png",
+            "path": "https://renzoqc.dev/files/sample/test-memoji.png",
             "alt": "photo",
         }
     },
@@ -107,7 +109,12 @@ export const Template = (args) => {
             "numberOrder": "01",
             "text": "About Me"
         },
-        "pathImage": "https://renzoqc.dev/files/photo-profile-test.png",
+        "image": {
+            "path": "https://renzoqc.dev/files/sample/profile-photo.jpg",
+            "width": 250,
+            "height": 250,
+            "desktopMultiplier": 1.2,
+        },
         "arrAbout": [
             "Lorem Ipsum is simply dummy text of the printing.\n",
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\n",
@@ -118,7 +125,7 @@ export const Template = (args) => {
         "arrThoughts": [
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         ]
     },
     "skillsPortfolio": {
@@ -127,19 +134,19 @@ export const Template = (args) => {
             "text": "Skillsets"
         },
         "arrTech": [
-            { "name": "test", "position": { "top": "10%", "left": "15%" } },
-            { "name": "test", "position": { "top": "4%", "left": "26%" } },
-            { "name": "test", "position": { "top": "30%", "left": "22%" } },
-            { "name": "test", "position": { "top": "25%", "left": "46%" } },
-            { "name": "test", "position": { "top": "10%", "left": "56%" } },
-            { "name": "test", "position": { "top": "38%", "left": "66%" } },
-            { "name": "test", "position": { "top": "12%", "left": "71%" } },
-            { "name": "test", "position": { "top": "28%", "left": "85%" } },
-            { "name": "test", "position": { "top": "90%", "left": "11%" } },
-            { "name": "test", "position": { "top": "95%", "left": "30%" } },
-            { "name": "test", "position": { "top": "85%", "left": "55%" } },
-            { "name": "test", "position": { "top": "94%", "left": "73%" } },
-            { "name": "test", "position": { "top": "82%", "left": "84%" } },
+            {"name": "test", "position": {"top": "10%", "left": "15%"}},
+            {"name": "test", "position": {"top": "4%", "left": "26%"}},
+            {"name": "test", "position": {"top": "30%", "left": "22%"}},
+            {"name": "test", "position": {"top": "25%", "left": "46%"}},
+            {"name": "test", "position": {"top": "10%", "left": "56%"}},
+            {"name": "test", "position": {"top": "38%", "left": "66%"}},
+            {"name": "test", "position": {"top": "12%", "left": "71%"}},
+            {"name": "test", "position": {"top": "28%", "left": "85%"}},
+            {"name": "test", "position": {"top": "90%", "left": "11%"}},
+            {"name": "test", "position": {"top": "95%", "left": "30%"}},
+            {"name": "test", "position": {"top": "85%", "left": "55%"}},
+            {"name": "test", "position": {"top": "94%", "left": "73%"}},
+            {"name": "test", "position": {"top": "82%", "left": "84%"}},
         ]
     },
     "experiencePortfolio": {
@@ -237,7 +244,7 @@ export const Template = (args) => {
                     "url": "google.com",
                 },
             }
-    ]
+        ]
     },
     "contactPortfolio": {
         "header": {
@@ -252,6 +259,6 @@ export const Template = (args) => {
         "signature": "Designed & Built by Lorem Ipsum"
     }
 }}>
-{Template.bind({})}
+    {Template.bind({})}
 </Story>
 

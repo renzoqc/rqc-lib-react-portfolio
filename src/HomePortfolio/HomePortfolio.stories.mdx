@@ -1,13 +1,12 @@
-
-import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import {ArgsTable, Meta, Story} from '@storybook/addon-docs';
 import HomePortfolio from './HomePortfolio';
 
-<Meta title="HomePortfolio" component={HomePortfolio} />
+<Meta title="HomePortfolio" component={HomePortfolio}/>
 
 # HomePortfolio
 
 ## HomePortfolio props
-<ArgsTable of={HomePortfolio} />
+<ArgsTable of={HomePortfolio}/>
 
 ## Description
 
@@ -16,10 +15,13 @@ import HomePortfolio from './HomePortfolio';
 ## Demo
 
 export const Template = (args) => {
-    return <HomePortfolio {...args} />
+    return <div style={{padding: '0 1.5em', backgroundColor: '#0B192E'}}>
+        <HomePortfolio {...args} />
+    </div>
 }
 
 <Story name="HomePortfolio" args={{
+    "className": "HomePortfolio",
     "greeting": "Hi, my name is",
     "name": "Lorem Ipsum.",
     "subtitle": "Lorem Ipsum is simply dummy text.",
@@ -29,10 +31,10 @@ export const Template = (args) => {
         "goTo": "www.your_domain.com/resume.pdf"
     },
     "img": {
-        "path": "https://renzoqc.dev/files/charmander.png",
+        "path": "https://renzoqc.dev/files/sample/test-memoji.png",
         "alt": "photo",
     }
 }}>
-{Template.bind({})}
+    {Template.bind({})}
 </Story>
 

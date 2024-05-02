@@ -1,7 +1,5 @@
 export interface ProjectsPortfolioProps {
-    /**
-     * Defines ...
-     */
+    className?: string;
     header: {
         numberOrder: string;
         text: string;

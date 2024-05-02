@@ -1,8 +1,7 @@
 export interface HeaderPortfolioProps {
-    /**
-     * Defines ...
-     */
+    className?: string;
     logo: {
+        width?: number;
         withText: boolean;
         pathImage: string;
         altImage: string;

@@ -1,42 +1,45 @@
 import './Image.scss';
-import { ImageProps } from './Image.types';
-import {linkTo} from "@storybook/addon-links";
-import { Col, Row } from '../Grid/Grid';
+import {ImageProps} from './Image.types';
 
 
-const Image = ({
-    classImg,
-    pathImage,
-    altImage,
-    border,
-    fade
-}: ImageProps) => {
+const Image = (
+    {
+        className = 'Image RQ-d-flex RQ-justify-center',
+        classImg = "",
+        width,
+        height,
+        path,
+        alt,
+        border,
+        fade,
+        desktopMultiplier,
+    }: ImageProps) => {
+    const styles = {
+        width: `${width}px`,
+        height: `${height}px`,
+    };
+
+    const desktopStyles = {
+        width: `${width * desktopMultiplier}px`,
+        height: `${height * desktopMultiplier}px`,
+    };
+
     return (
         <div
             data-testid="Image"
-            className={'Image RQ-d-flex RQ-justify-center'}
+            className={className}
         >
             <img className={`${fade ? 'image-fade' : ''} ${classImg}`}
-                 src={pathImage}
-                 alt={altImage}
+                 src={path}
+                 alt={alt}
+                 style={window.innerWidth > 992 ? desktopStyles : styles}
             />
-            <div className={`${border ? 'image-border' : ''}`}>
+            <div className={`${border ? 'image-border' : ''}`}
+                 style={window.innerWidth > 992 ? desktopStyles : styles}
+            >
             </div>
         </div>
     );
 };
 
 export default Image;
-
-
-// <div
-//     data-testid="Image"
-//     className={'Image'}
-// >
-//     <div className={`${border ? 'image-border' : ''}`}>
-//         <img className={`${fade ? 'image-fade' : ''} ${classImg}`}
-//              src={require(`../assets/${pathImage}`)}
-//              alt={altImage}
-//         />
-//     </div>
-// </div>

@@ -1,7 +1,5 @@
 export interface SidesPortfolioProps {
-    /**
-     * Defines ...
-     */
+    className?: string;
     left: {
         github: {
             show: boolean;

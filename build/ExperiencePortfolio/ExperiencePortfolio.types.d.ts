@@ -1,7 +1,5 @@
 export interface ExperiencePortfolioProps {
-    /**
-     * Defines ...
-     */
+    className?: string;
     header: {
         numberOrder: string;
         text: string;

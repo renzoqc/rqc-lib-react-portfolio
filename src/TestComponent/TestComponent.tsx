@@ -1,7 +1,6 @@
-// import './TestComponent.scss';
-import { TestComponentProps } from './TestComponent.types';
+import {TestComponentProps} from './TestComponent.types';
 
-const TestComponent = ({theme='primary'}:TestComponentProps)=>{
+const TestComponent = ({theme = 'primary'}: TestComponentProps) => {
     return (
         <div
             data-testid="test-component"
