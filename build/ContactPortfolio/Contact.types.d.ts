@@ -1,7 +1,5 @@
 export interface ContactProps {
-    /**
-     * Defines ...
-     */
+    className?: string;
     header: {
         numberOrder: string;
         text: string;

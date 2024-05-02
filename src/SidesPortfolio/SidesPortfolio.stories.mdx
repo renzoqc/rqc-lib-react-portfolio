@@ -1,12 +1,12 @@
-import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import {ArgsTable, Meta, Story} from '@storybook/addon-docs';
 import SidesPortfolio from './SidesPortfolio';
 
-<Meta title="SidesPortfolio" component={SidesPortfolio} />
+<Meta title="SidesPortfolio" component={SidesPortfolio}/>
 
 # SidesPortfolio
 
 ## Logo props
-<ArgsTable of={SidesPortfolio} />
+<ArgsTable of={SidesPortfolio}/>
 
 ## Description
 
@@ -15,10 +15,13 @@ import SidesPortfolio from './SidesPortfolio';
 ## Demo
 
 export const Template = (args) => {
-    return <SidesPortfolio {...args} />
+    return <div style={{padding: '0 1.5em', backgroundColor: '#0B192E'}}>
+        <SidesPortfolio {...args} />
+    </div>
 }
 
 <Story name="SidesPortfolio" args={{
+    className: "SidesPortfolio",
     left: {
         github: {
             show: true,
@@ -45,6 +48,6 @@ export const Template = (args) => {
         email: 'renzo-test@test.com'
     }
 }}>
-{Template.bind({})}
+    {Template.bind({})}
 </Story>
 

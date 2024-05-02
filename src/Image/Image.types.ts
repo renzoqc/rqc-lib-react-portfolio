@@ -2,9 +2,13 @@ export interface ImageProps {
     /**
      * Defines ...
      */
-    classImg: string;
-    pathImage: string;
-    altImage: string;
+    className?: string;
+    classImg?: string;
+    path: string;
+    width: number;
+    height: number;
+    alt: string;
     border?: boolean;
     fade?: boolean;
+    desktopMultiplier?: number;
 }

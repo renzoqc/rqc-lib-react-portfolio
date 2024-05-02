@@ -1,13 +1,12 @@
-
-import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import {ArgsTable, Meta, Story} from '@storybook/addon-docs';
 import MenuHeader from './MenuHeader';
 
-<Meta title="MenuHeader" component={MenuHeader} />
+<Meta title="MenuHeader" component={MenuHeader}/>
 
 # HomePortfolio
 
 ## HomePortfolio props
-<ArgsTable of={MenuHeader} />
+<ArgsTable of={MenuHeader}/>
 
 ## Description
 
@@ -16,10 +15,13 @@ import MenuHeader from './MenuHeader';
 ## Demo
 
 export const Template = (args) => {
-    return <MenuHeader {...args} />
+    return <div style={{padding: '0 1.5em', backgroundColor: '#0B192E'}}>
+        <MenuHeader {...args} />
+    </div>
 }
 
 <Story name="MenuHeader" args={{
+    className: "MenuHeader",
     menu: {
         colorNumber: 'cyan-pf',
         colorItem: 'red',
@@ -55,6 +57,6 @@ export const Template = (args) => {
         color: 'cyan-pf'
     }
 }}>
-{Template.bind({})}
+    {Template.bind({})}
 </Story>
 

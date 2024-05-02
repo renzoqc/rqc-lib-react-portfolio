@@ -1,7 +1,5 @@
 export interface HomePortfolioProps {
-    /**
-     * Defines ...
-     */
+    className?: string;
     greeting: string;
     name: string;
     subtitle: string;

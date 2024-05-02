@@ -1,7 +1,5 @@
 export interface MenuHeaderProps {
-    /**
-     * Defines ...
-     */
+    className?: string;
     menu: {
         colorNumber: string;
         colorItem: string;

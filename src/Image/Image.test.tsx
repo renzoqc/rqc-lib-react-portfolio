@@ -1,33 +1,33 @@
-import { render } from "@testing-library/react";
+import {render} from "@testing-library/react";
 
 import Image from "./Image";
-import { MenuHeaderProps } from "./Image.types";
+import {MenuHeaderProps} from "./Image.types";
 
 describe("Test Component", () => {
-  let props: MenuHeaderProps;
+    let props: MenuHeaderProps;
 
-  beforeEach(() => {
-    props = {
-      theme: "primary"
-    };
-  });
+    beforeEach(() => {
+        props = {
+            theme: "primary"
+        };
+    });
 
-  const renderComponent = () => render(<Image {...props} />);
+    const renderComponent = () => render(<Image {...props} />);
 
-  it("should have primary className with default props", () => {
-    const { getByTestId } = renderComponent();
+    it("should have primary className with default props", () => {
+        const {getByTestId} = renderComponent();
 
-    const testComponent = getByTestId("test-component");
+        const testComponent = getByTestId("test-component");
 
-    expect(testComponent).toHaveClass("test-component-primary");
-  });
+        expect(testComponent).toHaveClass("test-component-primary");
+    });
 
-  it("should have secondary className with theme set as secondary", () => {
-    props.theme = "secondary";
-    const { getByTestId } = renderComponent();
+    it("should have secondary className with theme set as secondary", () => {
+        props.theme = "secondary";
+        const {getByTestId} = renderComponent();
 
-    const testComponent = getByTestId("test-component");
+        const testComponent = getByTestId("test-component");
 
-    expect(testComponent).toHaveClass("test-component-secondary");
-  });
+        expect(testComponent).toHaveClass("test-component-secondary");
+    });
 });

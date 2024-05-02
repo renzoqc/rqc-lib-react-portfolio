@@ -1,7 +1,5 @@
 export interface SkillsPortfolioProps {
-    /**
-     * Defines ...
-     */
+    className?: string;
     header: {
         numberOrder: string;
         text: string;

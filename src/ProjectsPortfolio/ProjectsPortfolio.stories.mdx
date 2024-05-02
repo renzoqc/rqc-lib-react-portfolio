@@ -1,13 +1,12 @@
-
-import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import {ArgsTable, Meta, Story} from '@storybook/addon-docs';
 import ProjectsPortfolio from './ProjectsPortfolio';
 
-<Meta title="ProjectsPortfolio" component={ProjectsPortfolio} />
+<Meta title="ProjectsPortfolio" component={ProjectsPortfolio}/>
 
 # ProjectsPortfolio
 
 ## ProjectsPortfolio props
-<ArgsTable of={ProjectsPortfolio} />
+<ArgsTable of={ProjectsPortfolio}/>
 
 ## Description
 
@@ -16,10 +15,13 @@ import ProjectsPortfolio from './ProjectsPortfolio';
 ## Demo
 
 export const Template = (args) => {
-    return <ProjectsPortfolio {...args} />
+    return <div style={{padding: '0 1.5em', backgroundColor: '#0B192E'}}>
+        <ProjectsPortfolio {...args} />
+    </div>
 }
 
 <Story name="ProjectsPortfolio" args={{
+    "className": "ProjectsPortfolio",
     "header": {
         "numberOrder": "04",
         "text": "Yeah, I work hard"
@@ -66,6 +68,6 @@ export const Template = (args) => {
         }
     ]
 }}>
-{Template.bind({})}
+    {Template.bind({})}
 </Story>
 

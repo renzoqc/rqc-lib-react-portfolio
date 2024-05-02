@@ -2,43 +2,52 @@
 
 .AboutPortfolio {
   margin-top: 5rem;
+
   .About {
     .content {
       padding: 1rem 0;
+
       .RQ-description-content {
         padding: 1rem 0;
+
         strong {
           color: $theme-pf;
         }
       }
     }
+
     .line {
       margin: 0 40px 0 10px;
       color: green;
       border: 1px solid $theme-pf;
       width: 100%;
     }
+
     .circle {
       stroke: $theme-pf;
       fill: transparent;
     }
+
     .active {
       .circle {
         fill: $theme-pf;
       }
     }
+
     .left {
       text-align: left;
       float: left;
       clear: none;
       width: 50%;
     }
+
     .right {
       text-align: right;
       float: right;
       clear: none;
       width: 50%;
     }
+
     .circle-section {
       margin-left: 20px;
       margin-bottom: 2rem;
@@ -50,6 +59,7 @@
   .thoughts {
     margin-top: 80px;
     margin-right: 0;
+
     .container {
       width: 80%;
 
@@ -64,13 +74,14 @@
       margin: 1rem auto;
       padding: 20px;
       border: 1px solid $theme-pf;
-      border-radius: 10px;
+      border-radius: 20px;
       position: relative;
 
       &:hover {
         color: white;
         transition: 0.5s;
       }
+
       &:not(:hover) {
         transition: 0.5s;
       }
@@ -83,23 +94,6 @@
 
     }
   }
-
-
-  //@include media-breakpoint-up(sm) {
-  //  margin-top: 0;
-  //  padding: 3.5rem 3rem;
-  //  .About {
-  //    .content {
-  //      padding: 1rem 2rem 1rem 2rem;
-  //    }
-  //
-  //    .circle-section {
-  //      margin: 3rem 0 5rem 2rem;
-  //      width: 295px;
-  //    }
-  //
-  //  }
-  //}
 
   @include media-breakpoint-up(md) {
     margin-top: 0;
@@ -118,13 +112,13 @@
 
     .thoughts {
       margin-top: 80px;
+
       .container {
         width: 75%;
         height: 80px;
-        //margin: 0 2.2rem;
         padding: 20px;
         border: 1px solid $theme-pf;
-        border-radius: 10px;
+        border-radius: 20px;
         position: relative;
         margin: 0 auto;
 
@@ -132,6 +126,7 @@
           color: white;
           transition: 0.5s;
         }
+
         &:not(:hover) {
           transition: 0.5s;
         }

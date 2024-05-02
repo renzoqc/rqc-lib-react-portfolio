@@ -1,4 +1,3 @@
-
 $cyan: #2ac0f1;
 $cyan-pf: #64ffda;
 $orange: #FFA401;
@@ -18,7 +17,9 @@ $theme-subTitle-pf: #8892b0;
 $theme-description-pf: #8892b0;
 $theme-selection-pf: #112240;
 $theme-side-bar-pf: #112240;
-$theme-project-card : #0e2342;
+$theme-project-card: #0e2342;
+
+$storybook-background: #0B192E;
 
 //general styles
 
@@ -37,7 +38,6 @@ $theme-project-card : #0e2342;
 .RQ-description {
   color: $theme-description-pf;
 }
-//
 
 .RQ-cyan-pf {
   color: $cyan-pf;
@@ -68,6 +68,7 @@ $theme-project-card : #0e2342;
     color: $theme-pf;
     transition: 0.8s;
   }
+
   &:not(:hover) {
     transition: 0.5s;
   }
