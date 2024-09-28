@@ -1,12 +1,12 @@
-import {ArgsTable, Meta, Story} from "@storybook/addon-docs";
-import ExamplePortofolio from "./ExamplePortofolio";
+import { ArgsTable, Meta, Story } from '@storybook/addon-docs'
+import ExamplePortofolio from './ExamplePortofolio'
 
-<Meta title="ExamplePortofolio" component={ExamplePortofolio}/>
+<Meta title="ExamplePortofolio" component={ExamplePortofolio} />
 
 # ExamplePortofolio
 
 ## ExamplePortofolio props
-<ArgsTable of={ExamplePortofolio}/>
+<ArgsTable of={ExamplePortofolio} />
 
 ## Description
 
@@ -15,250 +15,254 @@ import ExamplePortofolio from "./ExamplePortofolio";
 ## Demo
 
 export const Template = (args) => {
-    return <ExamplePortofolio {...args} />
+  return <ExamplePortofolio {...args} />
 }
 
 <Story name="ExamplePortofolio" args={{
-    "headerPortfolio": {
-        "logo": {
-            "width": 65,
-            "pathImage": "https://renzoqc.dev/files/sample/test-logo.jpeg",
-            "altImage": "portfolio",
-            "withText": false,
-        },
-        "menuHeader": {
-            "menu": {
-                "colorNumber": "cyan-pf",
-                "colorItem": "white",
-                "data": [
-                    {
-                        "name": "About",
-                        "goTo": "#AboutPortfolio"
-                    },
-                    {
-                        "name": "Skillsets",
-                        "goTo": "#SkillsPortfolio"
-                    },
-                    {
-                        "name": "Work",
-                        "goTo": "#ExperiencePortfolio"
-                    },
-                    {
-                        "name": "Projects",
-                        "goTo": "#ProjectsPortfolio"
-                    },
-                    {
-                        "name": "Contact",
-                        "goTo": "#ContactPortfolio"
-                    }
-                ]
-            },
-            "logo": {
-                "path": "/"
-            },
-            "resume": {
-                "name": "Resume",
-                "goTo": "/",
-                "color": "cyan-pf"
-            }
-        }
+  "headerPortfolio": {
+    "logo": {
+      "width": 65,
+      "pathImage": "https://renzoqc.dev/files/sample/test-logo.jpeg",
+      "altImage": "portfolio",
+      "withText": false,
     },
-    "sidesPortfolio": {
-        "left": {
-            "github": {
-                "show": true,
-                "url": "https://github.com/"
-            },
-            "instagram": {
-                "show": true,
-                "url": "https://www.instagram.com/"
-            },
-            "twitter": {
-                "show": true,
-                "url": "https://twitter.com/"
-            },
-            "linkedin": {
-                "show": true,
-                "url": "https://www.linkedin.com/"
-            },
-            "editor": {
-                "show": true,
-                "url": "https://codepen.io/"
-            }
-        },
-        "right": {
-            "email": "test_email@test.com"
-        }
-    },
-    "homePortfolio": {
-        "greeting": "Hi, my name is",
-        "name": "Lorem Ipsum.",
-        "subtitle": "Lorem Ipsum is simply dummy text.",
-        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..",
-        "resume": {
-            "text": "Download Resume",
-            "goTo": "www.your_domain.com/resume.pdf"
-        },
-        "img": {
-            "path": "https://renzoqc.dev/files/sample/test-memoji.png",
-            "alt": "photo",
-        }
-    },
-    "aboutPortfolio": {
-        "header": {
-            "numberOrder": "01",
-            "text": "About Me"
-        },
-        "image": {
-            "path": "https://renzoqc.dev/files/sample/profile-photo.jpg",
-            "width": 250,
-            "height": 250,
-            "desktopMultiplier": 1.2,
-        },
-        "arrAbout": [
-            "Lorem Ipsum is simply dummy text of the printing.\n",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\n",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries\n",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\n"
-        ],
-        "arrThoughts": [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "menuHeader": {
+      "menu": {
+        "colorNumber": "cyan-pf",
+        "colorItem": "white",
+        "data": [
+          {
+            "name": "About",
+            "goTo": "#AboutPortfolio"
+          },
+          {
+            "name": "Skillsets",
+            "goTo": "#SkillsPortfolio"
+          },
+          {
+            "name": "Work",
+            "goTo": "#ExperiencePortfolio"
+          },
+          {
+            "name": "Projects",
+            "goTo": "#ProjectsPortfolio"
+          },
+          {
+            "name": "Contact",
+            "goTo": "#ContactPortfolio"
+          }
         ]
-    },
-    "skillsPortfolio": {
-        "header": {
-            "numberOrder": "02",
-            "text": "Skillsets"
-        },
-        "arrTech": [
-            {"name": "test", "position": {"top": "10%", "left": "15%"}},
-            {"name": "test", "position": {"top": "4%", "left": "26%"}},
-            {"name": "test", "position": {"top": "30%", "left": "22%"}},
-            {"name": "test", "position": {"top": "25%", "left": "46%"}},
-            {"name": "test", "position": {"top": "10%", "left": "56%"}},
-            {"name": "test", "position": {"top": "38%", "left": "66%"}},
-            {"name": "test", "position": {"top": "12%", "left": "71%"}},
-            {"name": "test", "position": {"top": "28%", "left": "85%"}},
-            {"name": "test", "position": {"top": "90%", "left": "11%"}},
-            {"name": "test", "position": {"top": "95%", "left": "30%"}},
-            {"name": "test", "position": {"top": "85%", "left": "55%"}},
-            {"name": "test", "position": {"top": "94%", "left": "73%"}},
-            {"name": "test", "position": {"top": "82%", "left": "84%"}},
-        ]
-    },
-    "experiencePortfolio": {
-        "header": {
-            "numberOrder": "03",
-            "text": "Where I’ve worked"
-        },
-        "arrExp": [
-            {
-                "company": "Lorem Ipsum",
-                "title": "Lorem Ipsum Developer",
-                "country": "🇺🇸",
-                "date": "September 2010 - Current",
-                "goTo": "www.google.com",
-                "tasks": [
-                    {
-                        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
-                    },
-                    {
-                        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
-                    },
-                    {
-                        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
-                    },
-                    {
-                        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
-                    }
-                ],
-            },
-            {
-                "company": "Lorem Ipsum",
-                "title": "Lorem Ipsum Developer",
-                "country": "🇺🇸",
-                "date": "September 2010 - Current",
-                "goTo": "www.google.com",
-                "tasks": [
-                    {
-                        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
-                    },
-                    {
-                        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
-                    },
-                    {
-                        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
-                    },
-                    {
-                        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
-                    }
-                ],
-            },
-        ]
-    },
-    "projectsPortfolio": {
-        "header": {
-            "numberOrder": "04",
-            "text": "Yeah, I work hard"
-        },
-        "arrProjects": [
-            {
-                "img": {
-                    "source": "https://renzoqc.dev/files/project-test.png",
-                },
-                "description": {
-                    "type": "Featured Project",
-                    "title": "Lorem Ipsum is simply dummy text",
-                    "info": "There are many variations <strong>variations</strong> of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-                    "stack": "ReactJs, Storybook, TypeScript, Sass, Jest",
-                    "github": "https://github.com/",
-                    "url": "google.com",
-                },
-            },
-            {
-                "img": {
-                    "source": "https://renzoqc.dev/files/project-test.png",
-                },
-                "description": {
-                    "type": "Featured Project",
-                    "title": "Lorem Ipsum is simply dummy text",
-                    "info": "There are many <strong>variations</strong> of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-                    "stack": "ReactJs, Storybook, TypeScript, Sass, Jest",
-                    "github": "https://github.com/",
-                    "url": "google.com",
-                },
-            },
-            {
-                "img": {
-                    "source": "https://renzoqc.dev/files/project-test.png",
-                },
-                "description": {
-                    "type": "Featured Project",
-                    "title": "Lorem Ipsum is simply dummy text",
-                    "info": "There are many <strong>variations</strong> of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-                    "stack": "ReactJs, Storybook, TypeScript, Sass, Jest",
-                    "github": "https://github.com/",
-                    "url": "google.com",
-                },
-            }
-        ]
-    },
-    "contactPortfolio": {
-        "header": {
-            "numberOrder": "05",
-            "text": "What’s Next?"
-        },
-        "phrase": "Get In Touch",
-        "content1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
-        "content2": "I’d love to hear from you!",
-        "buttonGoTo": "test@test.com",
-        "buttonText": "Say Hello",
-        "signature": "Designed & Built by Lorem Ipsum"
+      },
+      "logo": {
+        "path": "/"
+      },
+      "resume": {
+        "name": "Resume",
+        "goTo": "/",
+        "color": "cyan-pf"
+      }
     }
+  },
+  "sidesPortfolio": {
+    "left": [
+      {
+        "name": "youtube",
+        "url": "https://youtube.com/"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/"
+      },
+      {
+        "name": "editor",
+        "url": "https://codepen.io/"
+      }
+    ],
+    "right": {
+      "email": "test_email@test.com"
+    }
+  },
+  "homePortfolio": {
+    "greeting": "Hi, my name is",
+    "name": "Lorem Ipsum.",
+    "subtitle": "Lorem Ipsum is simply dummy text.",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..",
+    "resume": {
+      "text": "Download Resume",
+      "goTo": "www.your_domain.com/resume.pdf"
+    },
+    "img": {
+      "path": "https://renzoqc.dev/files/sample/test-memoji.png",
+      "alt": "photo",
+    }
+  },
+  "aboutPortfolio": {
+    "header": {
+      "numberOrder": "01",
+      "text": "About Me"
+    },
+    "image": {
+      "path": "https://renzoqc.dev/files/sample/profile-photo.jpg",
+      "width": 250,
+      "height": 250,
+      "desktopMultiplier": 1.2,
+    },
+    "arrAbout": [
+      "Lorem Ipsum is simply dummy text of the printing.\n",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\n",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries\n",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\n"
+    ],
+    "arrThoughts": [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    ]
+  },
+  "skillsPortfolio": {
+    "header": {
+      "numberOrder": "02",
+      "text": "Skillsets"
+    },
+    "arrTech": [
+      { "name": "test", "position": { "top": "10%", "left": "15%" } },
+      { "name": "test", "position": { "top": "4%", "left": "26%" } },
+      { "name": "test", "position": { "top": "30%", "left": "22%" } },
+      { "name": "test", "position": { "top": "25%", "left": "46%" } },
+      { "name": "test", "position": { "top": "10%", "left": "56%" } },
+      { "name": "test", "position": { "top": "38%", "left": "66%" } },
+      { "name": "test", "position": { "top": "12%", "left": "71%" } },
+      { "name": "test", "position": { "top": "28%", "left": "85%" } },
+      { "name": "test", "position": { "top": "90%", "left": "11%" } },
+      { "name": "test", "position": { "top": "95%", "left": "30%" } },
+      { "name": "test", "position": { "top": "85%", "left": "55%" } },
+      { "name": "test", "position": { "top": "94%", "left": "73%" } },
+      { "name": "test", "position": { "top": "82%", "left": "84%" } },
+    ]
+  },
+  "experiencePortfolio": {
+    "header": {
+      "numberOrder": "03",
+      "text": "Where I’ve worked"
+    },
+    "arrExp": [
+      {
+        "company": "Lorem Ipsum",
+        "title": "Lorem Ipsum Developer",
+        "country": "🇺🇸",
+        "date": "September 2010 - Current",
+        "goTo": "www.google.com",
+        "tasks": [
+          {
+            "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+          },
+          {
+            "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+          },
+          {
+            "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+          },
+          {
+            "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+          }
+        ],
+      },
+      {
+        "company": "Lorem Ipsum",
+        "title": "Lorem Ipsum Developer",
+        "country": "🇺🇸",
+        "date": "September 2010 - Current",
+        "goTo": "www.google.com",
+        "tasks": [
+          {
+            "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+          },
+          {
+            "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+          },
+          {
+            "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+          },
+          {
+            "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+          }
+        ],
+      },
+    ]
+  },
+  "projectsPortfolio": {
+    "header": {
+      "numberOrder": "04",
+      "text": "Yeah, I work hard"
+    },
+    "arrProjects": [
+      {
+        "img": {
+          "source": "https://renzoqc.dev/files/project-test.png",
+        },
+        "description": {
+          "type": "Featured Project",
+          "title": "Lorem Ipsum is simply dummy text",
+          "info": "There are many variations <strong>variations</strong> of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+          "stack": "ReactJs, Storybook, TypeScript, Sass, Jest",
+          "github": "https://github.com/",
+          "url": "google.com",
+        },
+      },
+      {
+        "img": {
+          "source": "https://renzoqc.dev/files/project-test.png",
+        },
+        "description": {
+          "type": "Featured Project",
+          "title": "Lorem Ipsum is simply dummy text",
+          "info": "There are many <strong>variations</strong> of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+          "stack": "ReactJs, Storybook, TypeScript, Sass, Jest",
+          "github": "https://github.com/",
+          "url": "google.com",
+        },
+      },
+      {
+        "img": {
+          "source": "https://renzoqc.dev/files/project-test.png",
+        },
+        "description": {
+          "type": "Featured Project",
+          "title": "Lorem Ipsum is simply dummy text",
+          "info": "There are many <strong>variations</strong> of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+          "stack": "ReactJs, Storybook, TypeScript, Sass, Jest",
+          "github": "https://github.com/",
+          "url": "google.com",
+        },
+      }
+    ]
+  },
+  "contactPortfolio": {
+    "header": {
+      "numberOrder": "05",
+      "text": "What’s Next?"
+    },
+    "phrase": "Get In Touch",
+    "content1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+    "content2": "I’d love to hear from you!",
+    "buttonGoTo": "test@test.com",
+    "buttonText": "Say Hello",
+    "signature": "Designed & Built by Lorem Ipsum"
+  }
 }}>
-    {Template.bind({})}
+  {Template.bind({})}
 </Story>
 
