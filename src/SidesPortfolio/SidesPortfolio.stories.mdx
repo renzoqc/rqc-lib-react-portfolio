@@ -1,12 +1,12 @@
-import {ArgsTable, Meta, Story} from '@storybook/addon-docs';
-import SidesPortfolio from './SidesPortfolio';
+import { ArgsTable, Meta, Story } from '@storybook/addon-docs'
+import SidesPortfolio from './SidesPortfolio'
 
-<Meta title="SidesPortfolio" component={SidesPortfolio}/>
+<Meta title="SidesPortfolio" component={SidesPortfolio} />
 
 # SidesPortfolio
 
 ## Logo props
-<ArgsTable of={SidesPortfolio}/>
+<ArgsTable of={SidesPortfolio} />
 
 ## Description
 
@@ -15,39 +15,39 @@ import SidesPortfolio from './SidesPortfolio';
 ## Demo
 
 export const Template = (args) => {
-    return <div style={{padding: '0 1.5em', backgroundColor: '#0B192E'}}>
-        <SidesPortfolio {...args} />
-    </div>
+  return <div style={{ padding: '0 1.5em', backgroundColor: '#0B192E' }}>
+    <SidesPortfolio {...args} />
+  </div>
 }
 
 <Story name="SidesPortfolio" args={{
-    className: "SidesPortfolio",
-    left: {
-        github: {
-            show: true,
-            url: 'https://www.github.com/'
-        },
-        instagram: {
-            show: true,
-            url: 'https://www.instagram.com/'
-        },
-        twitter: {
-            show: true,
-            url: 'https://www.twitter.com/'
-        },
-        linkedin: {
-            show: true,
-            url: 'https://www.linkedin.com/'
-        },
-        editor: {
-            show: true,
-            url: 'https://www.codepen.com/'
-        }
+  className: "SidesPortfolio",
+  left: [
+    {
+      name: "github",
+      url: 'https://www.github.com/'
     },
-    right: {
-        email: 'renzo-test@test.com'
+    {
+      name: "instagram",
+      url: 'https://www.instagram.com/'
+    },
+    {
+      name: "twitter",
+      url: 'https://www.twitter.com/'
+    },
+    {
+      name: "linkedin",
+      url: 'https://www.linkedin.com/'
+    },
+    {
+      name: "editor",
+      url: 'https://www.codepen.com/'
     }
+  ],
+  right: {
+    email: 'renzo-test@test.com'
+  }
 }}>
-    {Template.bind({})}
+  {Template.bind({})}
 </Story>
 
